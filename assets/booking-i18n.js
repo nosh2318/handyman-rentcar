@@ -211,7 +211,12 @@ window.HDM_DICT_EXT={
 "bk_pt_hours": "営業 9:00〜19:00",
 "bk_pt_ins": "免責補償・NOC補償を選べます",
 "bk_pt_4wd": "全車4WD・スタッドレスタイヤ",
-"bk_pt_navi": "全車ナビ・ETCつき"
+"bk_pt_navi": "全車ナビ・ETCつき",
+"bk_nx_ok_t": "受け取りの指定ができました",
+"bk_nx_ok_d": "次は、補償とチャイルドシートを選びます。",
+"bk_nx_btn": "次へ：補償・装備を選ぶ",
+"bk_nx_need_del": "地図でお届け場所を決めてください。決まると、ここに「次へ」のボタンが出ます。",
+"bk_nx_need_col": "回収場所も地図で決めてください。決まると、ここに「次へ」のボタンが出ます。"
 },
 "en": {
 "bk_title": "Booking",
@@ -424,7 +429,12 @@ window.HDM_DICT_EXT={
 "bk_pt_hours": "Open 9:00–19:00",
 "bk_pt_ins": "CDW & NOC coverage available",
 "bk_pt_4wd": "All cars 4WD with studless winter tires",
-"bk_pt_navi": "All cars with navigation & ETC"
+"bk_pt_navi": "All cars with navigation & ETC",
+"bk_nx_ok_t": "Pickup details are set",
+"bk_nx_ok_d": "Next, choose your coverage and child seats.",
+"bk_nx_btn": "Next: coverage & equipment",
+"bk_nx_need_del": "Choose your delivery spot on the map. A \"Next\" button will appear here once it is set.",
+"bk_nx_need_col": "Also choose the collection spot on the map. A \"Next\" button will appear here once it is set."
 },
 "zh": {
 "bk_title": "預約手續",
@@ -637,7 +647,12 @@ window.HDM_DICT_EXT={
 "bk_pt_hours": "營業 9:00〜19:00",
 "bk_pt_ins": "可選擇免責保障・NOC保障",
 "bk_pt_4wd": "全車4WD・配備雪地胎",
-"bk_pt_navi": "全車配備導航・ETC"
+"bk_pt_navi": "全車配備導航・ETC",
+"bk_nx_ok_t": "已完成取車方式的指定",
+"bk_nx_ok_d": "接下來請選擇保障方案與兒童座椅。",
+"bk_nx_btn": "下一步：選擇保障・配備",
+"bk_nx_need_del": "請在地圖上決定送車地點。決定後，這裡會出現「下一步」按鈕。",
+"bk_nx_need_col": "也請在地圖上決定取回地點。決定後，這裡會出現「下一步」按鈕。"
 },
 "ko": {
 "bk_title": "예약 절차",
@@ -850,6 +865,11 @@ window.HDM_DICT_EXT={
 "bk_pt_hours": "영업 9:00~19:00",
 "bk_pt_ins": "면책 보장·NOC 보장 선택 가능",
 "bk_pt_4wd": "전 차량 4WD·스터드리스 타이어",
-"bk_pt_navi": "전 차량 내비·ETC 장착"
+"bk_pt_navi": "전 차량 내비·ETC 장착",
+"bk_nx_ok_t": "인수 방법 지정이 완료되었습니다",
+"bk_nx_ok_d": "다음으로 보장 플랜과 카시트를 선택합니다.",
+"bk_nx_btn": "다음: 보장・장비 선택",
+"bk_nx_need_del": "지도에서 배달 장소를 정해 주세요. 정해지면 여기에 「다음」 버튼이 나타납니다.",
+"bk_nx_need_col": "회수 장소도 지도에서 정해 주세요. 정해지면 여기에 「다음」 버튼이 나타납니다."
 }
 };

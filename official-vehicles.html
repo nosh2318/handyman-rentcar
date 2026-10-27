@@ -98,9 +98,6 @@
 <p class="area-note" id="areaNote"></p>
 <div class="car-grid" id="grid"></div>
 
-<h2 data-p="equip_h3">🔧 全車共通の標準装備</h2>
-<div class="equip-tags" id="equipTags"></div>
-<p class="note" id="equipNote"></p>
 </div></main>
 <section class="cta-band"><div class="container"><p data-i18n="nv_cta_p">空車と料金は、予約画面ですぐに確認できます。</p><a class="btn" href="index.html#finder" data-i18n="nv_cta_btn">空車を探す</a></div></section>
 <footer class="gf"><div class="container">
@@ -175,8 +172,8 @@ function setArea(a){
  }).join('');
 }
 function _renderEquip(){
- document.getElementById('equipTags').innerHTML=EQUIP.map(function(e){return '<span class="tag">'+window.hdmTerm(e)+'</span>';}).join('');
- document.getElementById('equipNote').textContent=_vd('eqnote');
+ var _et=document.getElementById('equipTags');if(_et)_et.innerHTML=EQUIP.map(function(e){return '<span class="tag">'+window.hdmTerm(e)+'</span>';}).join('');
+ var _en=document.getElementById('equipNote');if(_en)_en.textContent=_vd('eqnote');
 }
 // ★2026-10-08 登録価格(hdm_official_price)をmasterから読み、一覧表示と請求を一致させる(price.base基準・オーナー確定A)。未取得/0はSTORE直書きにフォールバック(¥0/計算不能を出さない)。那覇も検索公開済(3d15782)のためズレを残さない
 window.__PRICEMASTER=window.__PRICEMASTER||{};

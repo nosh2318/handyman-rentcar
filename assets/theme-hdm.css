@@ -172,3 +172,35 @@ body{background:#fff;color:var(--text);font-size:15px}
 .page-hero.dz-hero{color:#fff}
 .page-hero.dz-hero h1,.page-hero.dz-hero .lead{color:#fff}
 .page-hero.dz-hero::before{background:linear-gradient(180deg,rgba(0,24,72,.72),rgba(0,24,72,.9))}
+
+/* 予約画面：送迎バスの案内ボタンを点滅させて目立たせる */
+@keyframes bkPulse{0%,100%{box-shadow:0 0 0 0 rgba(250,190,0,0);border-color:var(--ink)}50%{box-shadow:0 0 0 5px rgba(250,190,0,.8);border-color:var(--y)}}
+.bk-pulse{border-width:2px;animation:bkPulse 1.3s ease-in-out infinite}
+.bk-pulse:hover,.bk-pulse:focus-visible{animation:none}
+@media(prefers-reduced-motion:reduce){.bk-pulse{animation:none;box-shadow:0 0 0 4px rgba(250,190,0,.7);border-color:var(--y)}}
+
+/* 予約画面：満車のクラス（is-full 見やすく）＝薄い赤の地＋赤い「空車なし」表示。文字は薄くしない */
+.bk-car.is-full{filter:none;opacity:1;background:#fff5f5;border-color:#f3c4c4}
+.bk-car.is-full .im{background:#fdeaea}
+.bk-car.is-full .im img{filter:grayscale(1);opacity:.55}
+.bk-car.is-full .cl{background:#b42318}
+.bk-car.is-full .md,.bk-car.is-full .pc{color:#7a2e2a}
+.bk-car.is-full .fl{display:inline-block;background:#b42318;color:#fff;font-size:11px;font-weight:800;padding:1px 9px;border-radius:999px;letter-spacing:.04em}
+.bk-car.is-full .nos{color:#b42318;font-weight:700}
+.bk-car.is-full .bk-btn-l{border-color:#e7b3b0;color:#7a2e2a}
+.bk-cars.has-sel .bk-car.is-full{opacity:.8}
+
+/* 予約画面：受け取り指定のあと「次にやること」を案内 */
+.bk-next{margin-top:18px;border:2px dashed #cfd6e2;border-radius:8px;padding:14px 16px;background:#f7f9fc}
+.bk-next .tx b{display:block;font-size:14px;color:var(--ink)}
+.bk-next .tx span{display:block;font-size:13px;color:var(--mute);margin-top:2px}
+.bk-next.is-ready{border:2px solid #0f9d6b;background:#f0faf5}
+.bk-next.is-ready .tx b{color:#0b7a53}
+.bk-next.is-ready .bk-btn{margin-top:12px;font-size:15px;padding:14px}
+/* 必要な入力がそろったら、合計・進むボタンの枠を点滅（PC＝右の枠／スマホ＝下の帯） */
+@keyframes barPulse{0%,100%{box-shadow:0 0 0 0 rgba(250,190,0,0),0 0 0 0 rgba(250,190,0,0)}50%{box-shadow:0 0 0 4px #fabe00,0 0 18px 6px rgba(250,190,0,.45)}}
+.bk-bar.is-ready{animation:barPulse 1.2s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.bk-bar.is-ready{animation:none;box-shadow:0 0 0 4px #fabe00}}
+/* 店舗ページ：写真に重なる空車検索と、キャッチ下のタグが重ならないよう下の余白を確保 */
+.phero .copy{padding-bottom:136px}
+@media(max-width:860px){.phero .copy{padding-bottom:calc(116px + env(safe-area-inset-bottom))}}
