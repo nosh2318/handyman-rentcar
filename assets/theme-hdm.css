@@ -204,3 +204,6 @@ body{background:#fff;color:var(--text);font-size:15px}
 /* 店舗ページ：写真に重なる空車検索と、キャッチ下のタグが重ならないよう下の余白を確保 */
 .phero .copy{padding-bottom:136px}
 @media(max-width:860px){.phero .copy{padding-bottom:calc(116px + env(safe-area-inset-bottom))}}
+
+/* スマホ：横長の写真を縦長の枠で切り抜くとき、写真ごとに主役（車・人）が入る位置に寄せる */
+@media(max-width:860px){.kv .slide{background-position:var(--mp,50% 50%)}}
