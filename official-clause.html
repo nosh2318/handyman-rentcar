@@ -20,8 +20,8 @@
 .hdmlang-menu button.on{background:var(--ink)!important}
 .page-hero h1 .y{color:var(--y)}
 
-.pane{display:none}.pane.on{display:block}
-.page-hero h1.pane.on{display:block}
+.pane,.pane-t{display:none}.pane.on,.pane-t.on{display:block}
+.page-hero h1.pane.on,.pane-t.on{display:block}
 .article .langnav button.active{background:var(--ink);color:#fff;border-color:var(--ink)}
 .refnote{font-size:12.5px;color:#9a5b00;background:#fff;border-left:3px solid var(--y);padding:10px 14px;margin:0 0 20px;font-weight:700}
 .legal{background:#fff;border:1px solid #e4e0d8;border-radius:8px;padding:28px 28px 22px}
@@ -92,10 +92,10 @@
 </div></header>
 <section class="page-hero"><div class="container">
   <div class="eyebrow">TERMS OF RENTAL</div>
-  <h1 class="pane" data-lang="ja">貸渡<span class="y">約款</span></h1>
-  <h1 class="pane" data-lang="en">Rental <span class="y">Agreement</span></h1>
-  <h1 class="pane" data-lang="zh">租車<span class="y">條款</span></h1>
-  <h1 class="pane" data-lang="ko">대여 <span class="y">약관</span></h1>
+  <h1 class="pane-t" data-lang="ja">貸渡<span class="y">約款</span></h1>
+  <h1 class="pane-t" data-lang="en">Rental <span class="y">Agreement</span></h1>
+  <h1 class="pane-t" data-lang="zh">租車<span class="y">條款</span></h1>
+  <h1 class="pane-t" data-lang="ko">대여 <span class="y">약관</span></h1>
   
 </div></section>
 <main class="article"><div class="container narrow">
@@ -258,7 +258,7 @@
   var KEY='hdm_lang', LS=['ja','en','zh','ko'];
   var T={ja:'貸渡約款｜HANDYMAN RENTCAR',en:'Rental Agreement｜HANDYMAN RENTCAR',zh:'租車條款｜HANDYMAN RENTCAR',ko:'대여 약관｜HANDYMAN RENTCAR'};
   function detect(){if(window.hdmLang){try{var h=window.hdmLang();if(LS.indexOf(h)>=0)return h;}catch(e){}}try{var s=localStorage.getItem(KEY);if(s&&LS.indexOf(s)>=0)return s;}catch(e){}var n=(navigator.language||'ja').toLowerCase();return n.indexOf('ko')===0?'ko':n.indexOf('zh')===0?'zh':n.indexOf('en')===0?'en':'ja';}
-  function apply(l){if(LS.indexOf(l)<0)l='ja';document.documentElement.lang=l;document.title=T[l]||T.ja;document.querySelectorAll('.pane').forEach(function(p){p.classList.toggle('on',p.getAttribute('data-lang')===l);});document.querySelectorAll('#langsw button').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-l')===l);});try{localStorage.setItem(KEY,l);}catch(e){}}
+  function apply(l){if(LS.indexOf(l)<0)l='ja';document.documentElement.lang=l;document.title=T[l]||T.ja;document.querySelectorAll('.pane,.pane-t').forEach(function(p){p.classList.toggle('on',p.getAttribute('data-lang')===l);});document.querySelectorAll('#langsw button').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-l')===l);});try{localStorage.setItem(KEY,l);}catch(e){}}
   document.querySelectorAll('#langsw button').forEach(function(b){b.onclick=function(){var l=b.getAttribute('data-l');apply(l);if(window.hdmSetLang)try{window.hdmSetLang(l);}catch(e){}};});
   window.hdmOnLang=function(){apply(detect());}; // 他ページ/共有セレクタでの言語変更に追従
   apply(detect());
