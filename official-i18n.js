@@ -233,7 +233,7 @@
     am_spot_lead:'待ち合わせ場所は、高松空港1Fの国内線到着口を出てすぐのあたり（地図上の赤いピン）です。到着後は「レンタカー会社受付」の近くでお待ちください。HANDYMANのプラカードを持ったスタッフがお迎えにまいります。',
     am_ret_h:'🚙 ご返却後の送迎（店舗 → 高松空港）',am_ret_lead:'お車をご返却いただいた後は、店舗から高松空港まで無料でお送りいたします。ご搭乗便のお時間に合わせて出発できますので、受付の際にご希望のお時間をお伝えください。',
     am_flow_h:'🧭 ご利用当日の手順',am_s1:'高松空港の国内線到着口を出て、「レンタカー会社受付」の近くでお待ちください。',am_s2:'HANDYMANのプラカードを持ったスタッフがお迎えにあがります。',am_s3:'約5分で店舗に到着します。ご契約手続きとお車の確認が済みましたら出発です。',am_s4:'ご返却後は、ご搭乗便に合わせて店舗から高松空港まで無料でお送りします。',
-    am_note:'※ 運行時間は9:00–18:50です。ご到着時刻・ご返却時刻は、ご予約時またはメール（reserve@rent-handyman.com）でお知らせください。運行時間外の受け渡しをご希望の場合はご相談ください。',am_back:'← TOPページへ'},
+    am_note:'※ 運行時間は9:00–18:50です。ご到着時刻・ご返却時刻は、ご予約時またはメール（reserve@__NEW_DOMAIN__）でお知らせください。運行時間外の受け渡しをご希望の場合はご相談ください。',am_back:'← TOPページへ'},
    en:{stock:'Stock: ',stock_unit:'',price_on_search:'See price in availability search',tab_takamatsu:'Takamatsu Airport',
     note_takamatsu:'🍜 Takamatsu Airport: for trips around Kagawa & Shikoku. Free airport shuttle & in-store pickup (no delivery).',
     fnote_naha:'Okinawa area, delivery available. Specific model, color and trim cannot be chosen (random within the class).',
@@ -247,7 +247,7 @@
     am_spot_lead:'The meeting point is just outside the domestic arrivals gate on 1F of Takamatsu Airport (red pin on the map). After arriving, please wait near the "Rental Car Reception". A staff member holding a HANDYMAN placard will come to meet you.',
     am_ret_h:'🚙 Shuttle After Return (Store → Takamatsu Airport)',am_ret_lead:'After you return the car, we will take you from the store to Takamatsu Airport free of charge. We can leave in time for your flight, so please tell us your preferred time at the counter.',
     am_flow_h:'🧭 Steps on the Day',am_s1:'Exit the domestic arrivals gate at Takamatsu Airport and wait near the “Rental Car Reception”.',am_s2:'A staff member holding a HANDYMAN placard will come to meet you.',am_s3:'You will reach the store in about 5 minutes. Once the rental paperwork and vehicle check are done, you are ready to go.',am_s4:'After you return the car, we will take you from the store to Takamatsu Airport free of charge, in time for your flight.',
-    am_note:'※ Shuttle hours are 9:00–18:50. Please tell us your arrival and return times when booking or by email (reserve@rent-handyman.com). If you would like a handover outside shuttle hours, please contact us.',am_back:'← Back to top'},
+    am_note:'※ Shuttle hours are 9:00–18:50. Please tell us your arrival and return times when booking or by email (reserve@__NEW_DOMAIN__). If you would like a handover outside shuttle hours, please contact us.',am_back:'← Back to top'},
    zh:{stock:'庫存 ',stock_unit:'台',price_on_search:'費用請見空車搜尋',tab_takamatsu:'高松機場店',
     note_takamatsu:'🍜 高松機場店：香川・四國之旅。提供高松機場免費接送・到店取車（無送車服務）。',
     fnote_naha:'沖繩區域・提供送車。無法指定車種・顏色・配備（同車型隨機）。',
@@ -261,7 +261,7 @@
     am_spot_lead:'會合地點在高松機場1F國內線到達口出來後的附近（地圖上的紅色圖釘）。抵達後請在「租車公司櫃檯」附近等候，手持 HANDYMAN 牌子的工作人員會前來迎接。',
     am_ret_h:'🚙 還車後接送（門市 → 高松機場）',am_ret_lead:'還車後，我們將免費從門市送您至高松機場。可配合您的航班時間出發，請於櫃檯辦理時告知希望的時間。',
     am_flow_h:'🧭 使用當天的步驟',am_s1:'走出高松機場國內線到達口，於「租車公司櫃檯」附近等候。',am_s2:'手持 HANDYMAN 牌子的工作人員會前來迎接。',am_s3:'約5分鐘即可抵達門市。完成租賃手續及車輛確認後即可出發。',am_s4:'還車後，我們會配合您的航班，免費從門市送您至高松機場。',
-    am_note:'※ 運行時間為9:00–18:50。抵達時間及還車時間，請於預約時或透過電子郵件（reserve@rent-handyman.com）告知。如需於運行時間外交車或還車，請與我們洽詢。',am_back:'← 返回首頁'},
+    am_note:'※ 運行時間為9:00–18:50。抵達時間及還車時間，請於預約時或透過電子郵件（reserve@__NEW_DOMAIN__）告知。如需於運行時間外交車或還車，請與我們洽詢。',am_back:'← 返回首頁'},
    ko:{stock:'재고 ',stock_unit:'대',price_on_search:'요금은 빈차 검색에서',tab_takamatsu:'다카마쓰공항점',
     note_takamatsu:'🍜 다카마쓰공항점: 가가와・시코쿠 여행에. 다카마쓰공항 무료 셔틀・방문 수령 대응(배달 없음).',
     fnote_naha:'오키나와 지역・배달 대응. 차종・색상・사양은 선택할 수 없습니다(같은 클래스 내 랜덤).',
@@ -275,7 +275,7 @@
     am_spot_lead:'만남 장소는 다카마쓰공항 1F 국내선 도착구를 나오자마자 있는 곳(지도의 빨간 핀)입니다. 도착 후에는 「렌터카 회사 접수처」 근처에서 기다려 주세요. HANDYMAN 팻말을 든 스태프가 마중을 나갑니다.',
     am_ret_h:'🚙 반납 후 셔틀(매장 → 다카마쓰공항)',am_ret_lead:'차량을 반납하신 후에는 매장에서 다카마쓰공항까지 무료로 모셔다드립니다. 탑승편 시간에 맞춰 출발할 수 있으니, 접수 시 희망 시간을 말씀해 주세요.',
     am_flow_h:'🧭 이용 당일 절차',am_s1:'다카마쓰공항 국내선 도착구를 나와 「렌터카 회사 접수처」 부근에서 기다려 주세요.',am_s2:'HANDYMAN 팻말을 든 스태프가 마중을 나갑니다.',am_s3:'약 5분이면 매장에 도착합니다. 계약 절차와 차량 확인이 끝나면 출발합니다.',am_s4:'반납 후에는 탑승편에 맞춰 매장에서 다카마쓰공항까지 무료로 모셔다드립니다.',
-    am_note:'※ 운행 시간은 9:00–18:50입니다. 도착 시각과 반납 시각은 예약 시 또는 이메일(reserve@rent-handyman.com)로 알려 주세요. 운행 시간 외 인수인계를 원하시는 경우 상담해 주세요.',am_back:'← 처음으로'}
+    am_note:'※ 운행 시간은 9:00–18:50입니다. 도착 시각과 반납 시각은 예약 시 또는 이메일(reserve@__NEW_DOMAIN__)로 알려 주세요. 운행 시간 외 인수인계를 원하시는 경우 상담해 주세요.',am_back:'← 처음으로'}
   };
   var EXTRA2={
    ja:{am_busbtn:'🚐 高松空港 無料送迎について確認する',am_store_addr:'香川県高松市・高松空港周辺（詳細はご予約時にご案内）',
@@ -340,6 +340,8 @@
    // 送迎/来店の地点名
    '高松空港':{en:'Takamatsu Airport',zh:'高松機場',ko:'다카마쓰공항'},'那覇空港':{en:'Naha Airport',zh:'那覇機場',ko:'나하공항'},'赤嶺駅':{en:'Akamine Sta.',zh:'赤嶺站',ko:'아카미네역'}
   };
+  // ページ専用の追加辞書（例：予約画面 assets/booking-i18n.js）を取り込む
+  try{var _X=window.HDM_DICT_EXT;if(_X){for(var _l in _X){if(!DICT[_l])continue;for(var _k in _X[_l])DICT[_l][_k]=_X[_l][_k];}}}catch(e){}
   var ETC_SUF={en:' etc.',zh:' 等',ko:' 등'};
   // JP用語文字列を現在言語へ（「/」「／」区切り・末尾「等」・末尾「（…）」を分解）
   window.hdmTerm=function(s){

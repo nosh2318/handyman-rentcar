@@ -2,315 +2,80 @@
 <html lang="ja">
 <head>
 <!-- Google Tag Manager --><script src="gtm.js"></script><!-- End Google Tag Manager -->
-<meta charset="utf-8">
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="robots" content="noindex,nofollow">
+
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>HANDYMAN マイページ</title>
-<style>
-:root{
-  --bg:#f5efe4; --card:#fff; --ink:#1c2430; --sub:#6b7784; --line:#e6ddcd;
-  --accent:#0e7a6b; --accent-d:#0a5e52; --warn:#c2410c; --danger:#b91c1c; --gold:#b45309;
-  --r:16px; --shadow:0 3px 16px rgba(20,30,45,.09);
-}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0;background:var(--bg);color:var(--ink);
-  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
-  font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
-.wrap{max-width:520px;margin:0 auto;padding:calc(10px + env(safe-area-inset-top)) 14px calc(60px + env(safe-area-inset-bottom));min-height:100vh}
-.top{padding:22px 4px 12px;display:flex;align-items:center;gap:10px}
-.logo{font-weight:800;letter-spacing:.5px;font-size:19px}
-.logo b{color:var(--accent)}
-.store{margin-left:auto;font-size:14px;font-weight:800;color:#fff;border:none;box-shadow:0 2px 6px rgba(15,31,69,.22);white-space:nowrap;
-  padding:6px 15px;border-radius:999px;background:#121a24}
-.langsw{display:flex;gap:4px;margin:0 0 10px;flex-wrap:wrap}
-.langsw button{font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--line);
-  background:#fff;color:var(--sub);cursor:pointer}
-.langsw button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
-.hello{font-size:19px;font-weight:800;padding:2px 4px 12px;letter-spacing:.3px}
-.hello span{font-size:13px;font-weight:700;color:var(--sub);margin-left:4px}
-.hero{background:linear-gradient(135deg,var(--accent),var(--accent-d));color:#fff;
-  border-radius:var(--r);padding:18px;box-shadow:var(--shadow);margin-bottom:14px;
-  display:flex;align-items:center;gap:12px;overflow:hidden}
-.hero .hero-txt{flex:1;min-width:0}
-.hero .rid{font-size:12px;opacity:.85;letter-spacing:1px}
-.hero .car{font-size:22px;font-weight:800;margin:2px 0 8px}
-.hero .st{display:inline-block;font-size:12px;font-weight:700;background:rgba(255,255,255,.2);
-  padding:4px 12px;border-radius:999px}
-.hero .hero-car{width:40%;max-width:180px;flex:none;object-fit:contain;
-  filter:drop-shadow(0 6px 10px rgba(0,0,0,.25))}
-.hero.no-img{}
-/* ── 新ヒーロー(沖縄/シーサー背景) ── */
-.nhero{position:relative;border-radius:var(--r);overflow:hidden;color:#fff;margin:6px 0 14px;min-height:300px;box-shadow:var(--shadow);
-  background:linear-gradient(180deg,rgba(3,8,28,.5) 0%,rgba(4,14,40,.38) 45%,rgba(3,8,28,.82) 100%),url('images/hero-takamatsu-kv.png') center 45%/cover no-repeat}
-.nhero::before{content:"";position:absolute;left:0;right:0;top:0;height:92px;background:linear-gradient(180deg,rgba(3,8,28,.72),rgba(3,8,28,0))}
-.nhero .nh-logo{position:absolute;top:14px;left:14px;height:26px;z-index:3;filter:drop-shadow(0 1px 4px rgba(0,0,0,.45))}
-.nhero .nh-lang{position:absolute;top:14px;right:12px;z-index:4;display:flex;gap:3px}
-.nhero .nh-lang button{border:1.5px solid #fabe00;background:rgba(255,255,255,.16);color:#fff;font-size:10.5px;font-weight:800;padding:3px 7px;border-radius:8px;cursor:pointer;animation:langGlow 1.3s ease-in-out infinite}
-@keyframes langGlow{0%,100%{box-shadow:0 0 0 0 rgba(250,190,0,0);border-color:#fabe00}50%{box-shadow:0 0 0 3px rgba(250,190,0,.6);border-color:#ffd45e}}
-.nhero .nh-lang button.on{background:#fff;color:#121a24}
-.nhero .nh-c{position:relative;z-index:2;text-align:center;padding:72px 18px 20px}
-.nhero .nh-eye{font-family:"Hiragino Mincho ProN",serif;font-size:13px;font-style:italic;letter-spacing:2px;opacity:.85;margin-bottom:6px}
-.nhero .nh-oki{font-family:"Hiragino Mincho ProN",serif;font-size:50px;font-weight:800;color:#fabe00;line-height:1;letter-spacing:.14em;padding-left:.14em;text-shadow:0 3px 20px rgba(0,0,0,.45)}
-.nhero .nh-name{margin-top:12px;font-family:"Hiragino Mincho ProN",serif;font-size:14px;letter-spacing:1px;opacity:.95}
-.nhero .nh-cd{margin-top:14px;display:inline-flex;align-items:baseline;gap:8px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:7px 16px;border-radius:999px}
-.nhero .nh-cd b{font-size:26px;font-weight:800;line-height:1}
-.nhero .nh-wx{margin-top:10px;font-size:12px;display:inline-flex;gap:6px;align-items:center;background:rgba(0,0,0,.2);padding:4px 12px;border-radius:999px}
-.nhero .nh-wx b{font-size:14px}
-.nhero .nh-st{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:11px;font-weight:700;opacity:.92;z-index:2}
-/* ── デモ一致: アコーディオン/区切り/ドライブ/おもてなし ── */
-.divlabel{display:flex;align-items:center;gap:10px;margin:16px 4px 12px;color:var(--sub);font-size:11px;letter-spacing:3px;font-weight:800}
-.divlabel::before,.divlabel::after{content:"";flex:1;height:1px;background:#e6ddcd}
-.acc{background:#fff;border:1px solid #e6ddcd;border-radius:16px;margin-bottom:11px;box-shadow:0 5px 16px rgba(10,59,71,.05);overflow:hidden}
-.acc>summary{list-style:none;cursor:pointer;padding:15px 15px;display:flex;align-items:center;gap:10px;font-weight:800;font-size:15px;color:var(--accent-d)}
-.acc>summary::-webkit-details-marker{display:none}
-.acc>summary .ic{font-size:17px}
-.acc>summary .chev{order:9;margin-left:auto;transition:.25s;color:var(--sub);font-size:12px}
-.acc[open]>summary .chev{transform:rotate(180deg)}
-@keyframes glowPulseN{0%,100%{box-shadow:0 5px 16px rgba(10,59,71,.05)}50%{box-shadow:0 0 0 3px rgba(224,135,106,.3),0 6px 18px rgba(10,59,71,.06)}}
-@keyframes blinkN{0%,100%{opacity:.3}50%{opacity:1}}
-.acc:not([open]){animation:glowPulseN 2.4s ease-in-out infinite}
-.acc:not([open])>summary .chev{color:#e0876a}
-.acc:not([open])>summary::after{content:"未確認";font-size:9px;font-weight:800;color:#fff;background:#e0876a;border-radius:999px;padding:2px 7px;animation:blinkN 1.1s ease-in-out infinite}
-.acc>.accb{padding:0 15px 15px}
-.acc>.accb .row:first-of-type{border-top:0}
-.spotn{display:flex;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid #eceff3}
-.spotn:last-child{border-bottom:none}
-.spotn .th{width:52px;height:52px;border-radius:12px;flex-shrink:0}
-.spotn .nm{font-size:14px;font-weight:800}.spotn .ds{font-size:11.5px;color:var(--sub);margin-top:2px;line-height:1.5}.spotn .mn{font-size:10.5px;color:var(--accent);font-weight:800;margin-top:3px}
-.spg .city{font-weight:800;font-size:12.5px;color:var(--accent-d);margin:14px 0 2px;display:flex;align-items:center;gap:5px}
-.spg .city:first-child{margin-top:4px}
-.spg .sp{padding:9px 0 9px 20px;border-bottom:1px solid #eceff3}
-.spg .sp:last-child{border-bottom:none}
-.spg .sp .nm{font-size:14px;font-weight:800}
-.spg .sp .ds{font-size:11.5px;color:var(--sub);margin-top:2px;line-height:1.55}
-.spg .sp .mp{display:inline-block;margin-top:5px;font-size:11.5px;font-weight:800;color:var(--accent);text-decoration:none;border:1px solid var(--accent);border-radius:999px;padding:3px 11px}
-.busitem .busttl{font-weight:800;font-size:13px;color:#121a24}
-.busdiv{font-weight:800;font-size:13.5px;color:#121a24;animation:busBlink 1.2s ease-in-out infinite}
-.busdiv2{margin-top:16px;padding-top:14px;border-top:2px dashed #e6ddcd}
-.pkway{font-weight:800;font-size:12.5px;color:#121a24;margin:12px 0 8px;display:flex;align-items:center;gap:6px}
-.pkway::before{content:"";flex:0 0 18px;height:2px;background:#fabe00}
-.pksteps{display:flex;flex-direction:column;gap:14px}
-.pkstep{position:relative;background:#fff;border:1px solid #e6ddcd;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(15,31,69,.06)}
-.pkstep .pkhd{display:flex;align-items:center;gap:10px;padding:11px 13px}
-.pknum{flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:#121a24;color:#fff;font-weight:900;font-size:15px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(15,31,69,.3)}
-.pkcap{font-size:13.5px;font-weight:700;color:#1e293b;line-height:1.5}
-.pkstep img{display:block;width:100%;height:auto}
-.pkimg2{display:grid;grid-template-columns:1fr 1fr;gap:2px}
-.pkgoal{border-color:#fabe00;box-shadow:0 3px 12px rgba(250,190,0,.28)}
-.pkgoal .pknum{background:#F86018}
-.pkgoal .pkcap{color:#c2410c}
-.quizbnr{display:flex;align-items:center;gap:11px;background:linear-gradient(120deg,#121a24,#1e3a8a);color:#fff;border-radius:16px;padding:13px 15px;margin-bottom:14px;cursor:pointer;box-shadow:0 6px 18px rgba(15,31,69,.28);position:relative;overflow:hidden}
-.quizbnr::after{content:"";position:absolute;right:-30px;top:-30px;width:90px;height:90px;background:radial-gradient(circle,rgba(250,190,0,.35),transparent 70%)}
-.quizbnr .qb-ic{font-size:26px;flex:0 0 auto;animation:qbwiggle 2s ease-in-out infinite}
-@keyframes qbwiggle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
-.quizbnr .qb-tx{flex:1;line-height:1.3;min-width:0}
-.quizbnr .qb-tx b{display:block;font-size:15px;font-weight:900}
-.quizbnr .qb-tx span{display:block;font-size:11.5px;opacity:.85;margin-top:1px}
-.quizbnr .qb-go{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:#fabe00;color:#121a24;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px}
-.tvbox{background:#fff;border:1px solid #e6e9ef;border-radius:16px;padding:14px 14px 12px;margin-bottom:14px;box-shadow:0 4px 14px rgba(15,31,69,.08)}
-.tvbox .tv-h{display:flex;align-items:center;gap:8px;margin-bottom:2px}
-.tvbox .tv-h .ic{font-size:20px}
-.tvbox .tv-h b{font-size:15px;font-weight:900;color:#121a24}
-.tvbox .tv-sub{font-size:11.5px;color:#7b8aa3;margin:0 0 11px 28px}
-.tv-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
-.tv-item{display:flex;align-items:center;gap:9px;border:1px solid #e6e9ef;border-radius:12px;padding:11px 12px;cursor:pointer;text-decoration:none;color:#121a24;background:#fbfcfe}
-.tv-item:active{transform:translateY(1px)}
-.tv-item .te{font-size:22px;flex:0 0 auto}
-.tv-item .tt{font-size:12.5px;font-weight:800;line-height:1.3}
-.tv-item .tg{margin-left:auto;color:#c7cfdb;font-weight:900;font-size:12px}
-@keyframes busBlink{0%,100%{opacity:1}50%{opacity:.4}}
-.mp2{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:800;color:#fff;background:var(--accent);border-radius:10px;padding:9px 15px;text-decoration:none}
-.oshin{text-align:center;padding:22px 18px;background:linear-gradient(180deg,#0c3f86,#03081c);color:#fff;border-radius:18px;margin:14px 0 6px;font-family:"Hiragino Mincho ProN",serif}
-.oshin p{font-size:13.5px;line-height:1.9;margin:8px 4px 0;opacity:.95}.oshin .sig{font-size:11px;letter-spacing:2px;opacity:.8;margin-top:12px}
-.card{background:var(--card);border:1px solid #d5dce4;border-radius:var(--r);
-  padding:16px;margin-bottom:14px;box-shadow:var(--shadow);overflow:hidden}
-.card h2{margin:-16px -16px 12px;font-size:14px;font-weight:800;display:flex;align-items:center;gap:7px;
-  padding:12px 16px;background:#f6f9fb;border-bottom:1px solid #e2e7ee;color:var(--accent-d)}
-.card h2 .em{font-size:16px}
-.row{display:flex;align-items:flex-start;gap:10px;padding:11px 0;border-top:1px solid #eceff3}
-.row:first-of-type{border-top:0}
-.row .k{width:82px;flex:none;color:var(--sub);font-size:13px;padding-top:1px}
-.row .v{flex:1;font-weight:600;word-break:break-word}
-.row .v.big{font-size:16px}
-.edit{margin-left:auto;flex:none;font-size:12px;font-weight:700;color:var(--accent);
-  border:1px solid var(--accent);background:#f0faf7;border-radius:999px;padding:4px 12px;cursor:pointer}
-.edit.req{color:var(--gold);border-color:var(--gold);background:#fff8ec}
-.muted{color:var(--sub)}
-.pill{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;
-  padding:5px 12px;border-radius:999px}
-.pill.wait{background:#f1f3f5;color:var(--sub)}
-.pill.on{background:#eafaf5;color:var(--accent-d)}
-.bigbtn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
-  padding:14px;border-radius:12px;font-weight:800;font-size:15px;border:0;cursor:pointer;
-  background:var(--accent);color:#fff;text-decoration:none}
-.bigbtn.ghost{background:#fff;color:var(--accent);border:1.5px solid var(--accent)}
-.note{font-size:12px;color:var(--sub);margin-top:8px;line-height:1.5}
-.hrow{display:flex;gap:8px;align-items:baseline;padding:7px 0;border-top:1px solid var(--line);font-size:13px}
-.hrow:first-of-type{border-top:0}
-.hdate{color:var(--sub);font-size:11.5px;flex:0 0 auto;min-width:32px;font-weight:700}
-.htx{flex:1;line-height:1.5}
-.hpill{flex:0 0 auto;padding:1px 8px;border-radius:999px;font-size:10.5px;font-weight:700}
-.hint{font-size:12.5px;color:var(--accent-d);background:#eafaf5;border:1px solid #b7e6da;
-  border-left:4px solid var(--accent);border-radius:10px;padding:10px 12px;margin-top:10px;line-height:1.6;font-weight:600}
-.hint b{color:var(--accent-d)}
-.dashed{border:1.5px dashed var(--line);border-radius:12px;padding:16px;text-align:center;color:var(--sub)}
-.reqbar{display:flex;gap:8px;flex-wrap:wrap}
-.reqbtn{flex:1;min-width:calc(50% - 4px);text-align:center;padding:11px 8px;border-radius:12px;
-  font-size:13px;font-weight:700;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink)}
-.reqbtn.danger{color:var(--danger);border-color:#f3c9c9;background:#fff6f6}
-.foot{text-align:center;color:var(--sub);font-size:11px;padding:18px 0 4px;line-height:1.7}
-.foot a{color:var(--accent)}
-/* modal */
-.scrim{position:fixed;inset:0;background:rgba(20,28,38,.5);display:none;align-items:flex-end;
-  justify-content:center;z-index:50}
-.scrim.show{display:flex}
-.sheet{background:#fff;width:100%;max-width:520px;border-radius:20px 20px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom));
-  animation:up .25s ease}
-@keyframes up{from{transform:translateY(30px);opacity:.5}to{transform:none;opacity:1}}
-.sheet h3{margin:0 0 4px;font-size:17px;font-weight:800}
-.sheet p.sub{margin:0 0 14px;color:var(--sub);font-size:13px}
-.field{margin-bottom:12px}
-.field label{display:block;font-size:12px;font-weight:700;color:var(--sub);margin-bottom:5px}
-.field input,.field select,.field textarea{width:100%;padding:12px;border:1.5px solid var(--line);
-  border-radius:10px;font-size:16px;font-family:inherit;background:#fff}
-.field textarea{min-height:80px;resize:vertical}
-.sheet .acts{display:flex;gap:10px;margin-top:6px}
-.sheet .acts button{flex:1;padding:13px;border-radius:11px;font-weight:800;font-size:15px;border:0;cursor:pointer}
-.btn-cancel{background:#eef1f4;color:var(--ink)}
-.btn-ok{background:var(--accent);color:#fff}
-.btn-ok.req{background:var(--gold)}
-.btn-ok.danger{background:var(--danger)}
-.sheet .acts button:disabled{opacity:.4;cursor:not-allowed}
-.optrow{display:grid;grid-template-columns:52px 1fr 16px 88px;gap:9px;align-items:center;
-  padding:11px 0;border-top:1px solid var(--line)}
-.optimg{width:52px;height:52px;object-fit:cover;border-radius:9px;border:1px solid var(--line);background:#fafbfc}
-.optlbl{font-weight:700;font-size:13px}
-.optprice{display:block;font-size:11px;color:var(--sub);font-weight:600;margin-top:1px}
-.optprev-tot{margin-top:6px;padding-top:6px;border-top:1px dashed #e6cfa0;font-weight:800;font-size:14px;text-align:right;color:var(--gold)}
-.optcur{font-size:13px;color:var(--sub);text-align:right}
-.optarrow{text-align:center;color:var(--sub)}
-.optsel{padding:8px;border:1.5px solid var(--line);border-radius:9px;font-size:16px;background:#fff}
-.optprev{background:#fff8ec;border:1px solid #f3d9a8;border-radius:10px;padding:10px 12px;margin-top:12px}
-.optprev-h{font-size:11px;font-weight:800;color:var(--gold);margin-bottom:4px}
-.optprev-r{font-size:13px;font-weight:600}
-.trkbtns{display:flex;gap:8px;margin-top:10px}
-.trkbtn{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;text-align:center;
-  padding:13px 8px;border-radius:12px;font-weight:800;font-size:13.5px;text-decoration:none;
-  background:#eef1f4;color:#121a24;border:1.5px solid #dfe4ea}
-.trkbtn.live{background:#121a24;color:#fff;border-color:#121a24}
-.trkbtn .livebadge{font-size:10px;font-weight:800;background:#0e9f50;color:#fff;border-radius:999px;padding:1px 7px;margin-left:4px}
-/* 追跡プレビュー(見本・本番配色 ネイビー×ゴールド) */
-.tphone{position:relative;border-radius:14px;overflow:hidden;border:1px solid #dfe4ea;
-  box-shadow:0 4px 18px rgba(15,31,69,.14);background:#fff}
-.tp-badge{position:absolute;top:9px;right:9px;z-index:4;background:rgba(15,31,69,.82);color:#fff;
-  font-size:10px;font-weight:800;padding:3px 10px;border-radius:999px;letter-spacing:.5px}
-.tp-hd{background:#121a24;color:#fff;padding:11px 14px;display:flex;align-items:center;gap:8px}
-.tp-logo{font-weight:900;font-size:15px;letter-spacing:.5px}.tp-logo b{color:#fabe00}
-.tp-hdsub{font-size:11px;opacity:.85;font-weight:700}
-.tp-status{background:#0e9f50;color:#fff;font-size:12.5px;font-weight:800;padding:8px 14px;
-  display:flex;align-items:center;gap:8px}
-.tp-status b{font-size:15px;margin:0 1px}
-.tp-dot{width:9px;height:9px;border-radius:50%;background:#fff;box-shadow:0 0 0 0 rgba(255,255,255,.7);
-  animation:tppulse 1.6s infinite}
-@keyframes tppulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.7)}70%{box-shadow:0 0 0 8px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
-.tp-map{position:relative;height:180px;background:linear-gradient(120deg,#e8f0e9 0%,#e3ecf4 100%)}
-.tp-map::before{content:"";position:absolute;inset:0;
-  background-image:linear-gradient(#d5e0ea 1px,transparent 1px),linear-gradient(90deg,#d5e0ea 1px,transparent 1px);
-  background-size:32px 32px;opacity:.7}
-.tp-route{position:absolute;left:20%;top:74%;width:60%;height:4px;
-  background:repeating-linear-gradient(90deg,#121a24 0 11px,transparent 11px 20px);
-  transform:rotate(-27deg);transform-origin:left center;border-radius:2px;opacity:.8}
-.tp-car{position:absolute;font-size:28px;filter:drop-shadow(0 4px 5px rgba(0,0,0,.25));z-index:2;
-  animation:tpmove 3.6s ease-in-out infinite}
-.tp-dest{position:absolute;right:15%;top:20%;font-size:28px;filter:drop-shadow(0 4px 5px rgba(0,0,0,.25))}
-.tp-destlbl{position:absolute;left:50%;top:-14px;transform:translateX(-50%);background:#121a24;color:#fff;
-  font-size:9px;font-weight:800;padding:2px 7px;border-radius:6px;white-space:nowrap}
-@keyframes tpmove{0%{left:17%;top:76%}50%{left:55%;top:48%}100%{left:17%;top:76%}}
-.tp-bar{display:flex;align-items:center;gap:10px;padding:11px 12px;background:#fff;border-top:1px solid #eef1f4}
-.tp-info{flex:none}
-.tp-k{font-size:10px;color:var(--sub);font-weight:700}
-.tp-v{font-size:15px;font-weight:900;color:#121a24}
-.tp-share{flex:1;background:#fabe00;color:#121a24;border:0;border-radius:10px;padding:11px;
-  font-size:13px;font-weight:900;box-shadow:0 2px 6px rgba(250,190,0,.4)}
-.mpmap{width:100%;height:230px;border-radius:12px;border:1px solid var(--line);overflow:hidden;background:#eef1f4}
-.mpsug{position:absolute;left:0;right:0;top:100%;z-index:5;background:#fff;border:1px solid var(--line);
-  border-radius:0 0 10px 10px;box-shadow:0 8px 20px rgba(20,30,45,.12);display:none;max-height:220px;overflow:auto}
-.mpsug-i{padding:10px 12px;font-size:13px;border-bottom:1px solid #f2f4f6;cursor:pointer}
-.mpsug-i:hover{background:#f5f8ff}
-.mppicked{margin-top:10px;font-size:13px;background:#eafaf5;border:1px solid #b7e6da;border-radius:10px;padding:9px 12px}
-.mppicked b{color:var(--accent-d)}
-.inscard{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px;background:#fafbfc}
-.insttl{font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:space-between;gap:8px}
-.insprice{color:var(--accent-d);font-size:13px}
-.insdesc{font-size:11.5px;color:var(--sub);margin-top:3px;line-height:1.5}
-.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:#1c2430;color:#fff;
-  padding:12px 20px;border-radius:999px;font-size:13px;font-weight:700;z-index:99;opacity:0;
-  transition:opacity .25s;pointer-events:none;max-width:90%;text-align:center}
-.toast.show{opacity:1}
-.center{text-align:center;padding:60px 20px;color:var(--sub)}
-.spin{width:26px;height:26px;border:3px solid var(--line);border-top-color:var(--accent);
-  border-radius:50%;animation:sp 1s linear infinite;margin:0 auto 14px}
-@keyframes sp{to{transform:rotate(360deg)}}
-.banner{background:#fff8ec;border:1px solid #f3d9a8;color:var(--gold);border-radius:12px;
-  padding:11px 13px;font-size:12.5px;font-weight:700;margin-bottom:12px;display:flex;gap:8px}
-.setbanner{display:flex;align-items:center;gap:11px;background:linear-gradient(135deg,#fff3d6,#ffe9c2);
-  border:1.5px solid #f0c46a;border-radius:14px;padding:13px;margin-bottom:12px;cursor:pointer;box-shadow:0 2px 10px rgba(180,120,10,.12)}
-.setbanner .sb-ic{font-size:24px;flex:none}
-.setbanner .sb-tx{flex:1;font-size:12.5px;color:#7a4d06;line-height:1.4}
-.setbanner .sb-tx b{display:block;font-size:14px;color:#8a4b00;margin-bottom:1px}
-.setbanner .sb-go{flex:none;font-weight:900;color:#8a4b00;background:#fff;border-radius:999px;padding:6px 12px;font-size:13px}
-@keyframes licpulse{0%,100%{box-shadow:0 0 0 0 rgba(220,38,38,.55)}50%{box-shadow:0 0 0 7px rgba(220,38,38,0)}}
-.licalert{display:flex;align-items:center;gap:11px;background:#fef2f2;border:2px solid #dc2626;border-radius:14px;padding:13px 15px;margin-bottom:14px;cursor:pointer;animation:licpulse 1.15s ease-in-out infinite}
-.licalert .la-ic{font-size:26px;flex:none}
-.licalert .la-tx{flex:1;min-width:0}
-.licalert .la-tx b{display:block;color:#b91c1c;font-size:15px;font-weight:900;margin-bottom:2px}
-.licalert .la-tx span{display:block;color:#7f1d1d;font-size:12.5px;line-height:1.55}
-.licalert .la-go{flex:none;background:#dc2626;color:#fff;font-weight:800;font-size:13px;border-radius:9px;padding:9px 12px;white-space:nowrap}
-.unset{display:inline-block;font-size:12px;font-weight:800;color:var(--warn);background:#fff1e6;
-  border:1px solid #f5c9a3;border-radius:6px;padding:2px 9px}
-.edit.call{color:#fff;background:var(--warn);border-color:var(--warn);animation:pulse 1.6s infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(194,65,12,.4)}60%{box-shadow:0 0 0 6px rgba(194,65,12,0)}}
-/* ★高松 送迎(お迎え)セクション(ガイド移植) */
-.puc{margin-top:14px;background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:15px 15px 17px;box-shadow:0 2px 12px rgba(15,31,69,.06)}
-.pu-h{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;color:#121a24;margin-bottom:12px}
-.pu-free{margin-left:auto;background:#ee6a1c;color:#fff;font-size:11px;font-weight:900;border-radius:20px;padding:3px 13px;letter-spacing:.06em}
-.pu-route{display:flex;align-items:center;justify-content:center;gap:16px;background:linear-gradient(120deg,#0e0e12,#1c1c1f 55%,#241a12);border-radius:12px;padding:16px 10px;margin:6px 0 12px;color:#fff}
-.pu-node{text-align:center;font-size:13px;font-weight:800;line-height:1.4}
-.pu-emoji{font-size:30px;margin-bottom:5px}
-.pu-arrow{font-size:24px;color:#ee6a1c;font-weight:900}
-.pu-time{text-align:center;font-size:14px;font-weight:800;color:#121a24;background:#fff7ef;border:1px solid #ffd9b8;border-radius:10px;padding:8px;margin-bottom:12px}
-.pu-time b{color:#ee6a1c;font-size:18px}
-.pu-mins{display:flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(120deg,#ee6a1c,#f5893e);color:#fff;border-radius:10px;padding:11px 14px;margin-bottom:12px;font-size:13px;font-weight:800;box-shadow:0 2px 10px rgba(238,106,28,.35)}
-.pu-mins b{font-size:21px;font-weight:900}
-.pu-lead{font-size:14px;color:#334;line-height:1.75;margin-bottom:14px}
-.pu-pick{background:#fff7ef;border:1.5px solid #ffd9b8;border-radius:12px;padding:13px 14px;margin-bottom:14px}
-.pu-pick.blink{animation:puPulse 1.3s ease-in-out infinite}
-@keyframes puPulse{0%,100%{box-shadow:0 0 0 0 rgba(238,106,28,.4)}60%{box-shadow:0 0 0 7px rgba(238,106,28,0)}}
-.pu-pick-h{font-size:14px;font-weight:800;color:#121a24;margin-bottom:3px}
-.pu-pick-sub{font-size:12px;color:#64748b;margin-bottom:10px}
-.pu-pick-row{display:flex;gap:8px}
-.pu-sel{flex:1;font-size:16px;padding:10px;border:1.5px solid #e2e8f0;border-radius:9px;background:#fff;color:#1e293b}
-.pu-save{background:#ee6a1c;color:#fff;font-weight:800;font-size:13px;border:none;border-radius:9px;padding:0 16px;cursor:pointer;white-space:nowrap}
-.pu-save:disabled{opacity:.6}
-.pu-cur{margin-top:10px;background:#eafaf0;border:2px solid #0e9f50;border-radius:12px;padding:12px 14px;font-size:14px;font-weight:800;color:#0e7a3b}
-.pu-cur b{font-size:18px}
-.pu-spot{font-size:13px;font-weight:800;color:#121a24;margin-bottom:8px}
-.pu-map{width:100%;border-radius:12px;border:1px solid #e2e8f0;box-shadow:0 2px 10px rgba(0,0,0,.12);display:block}
-.pu-spot-d{font-size:12px;color:#64748b;line-height:1.75;margin-top:8px}
-.pu-return{margin-top:12px;background:#fff7ef;border:2px solid #ee6a1c;border-radius:10px;padding:12px 14px;font-size:13px;font-weight:800;color:#c85a12;line-height:1.75}
-</style>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="design-v3.css">
+<title>マイページ｜HANDYMAN RENTCAR 高松空港店</title>
+<meta name="theme-color" content="#0e1013">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Shippori+Mincho:wght@500;600&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/mypage-tkm.css"><link rel="stylesheet" href="assets/theme-hdm.css">
+<script src="assets/pages-i18n.js?v=1027"></script>
 </head>
-<body>
-<div class="wrap" id="app">
-  <div class="center"><div class="spin"></div>読み込み中…</div>
-</div>
+<body class="mp">
+<header class="gh"><div class="container in">
+  <a class="logo" href="index.html"><img src="official-assets/brand/img_logo_v2.png" alt="HANDYMAN RENTCAR"></a>
+  <nav class="gnav" aria-label="main"><a href="official-access.html"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-i18n="hd_access">店舗・アクセス</span></a><a href="official-vehicles.html"><svg viewBox="0 0 24 24"><path d="M4 16V12l2-5h12l2 5v4"/><path d="M3 16h18v3H3z"/><circle cx="7.5" cy="16" r="1.6"/><circle cx="16.5" cy="16" r="1.6"/></svg><span data-i18n="hd_cars">車両と料金</span></a><a href="official-insurance.html"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg><span data-i18n="hd_ins">補償プラン</span></a><a href="index.html#faq"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .8-1 1.5V14"/><path d="M12 17.2v.1"/></svg><span data-i18n="hd_faq">よくある質問</span></a></nav>
+  <a class="rsv" href="official-mypage-find.html"><svg viewBox="0 0 24 24"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/></svg><span data-i18n="hd_rsv">予約確認</span></a>
+  <button class="ham" type="button" aria-label="menu"><span></span><span></span><span></span></button>
+  <nav class="drawer" aria-label="メニュー" data-i18n-aria="nv_a_menu">
+    <button class="dclose" type="button" aria-label="閉じる" data-i18n-aria="nv_a_close">✕</button>
+    <a href="official-mypage-find.html" class="hl" data-i18n="nv_rsv">🔑 予約確認</a>
+    <a href="official-mypage-guide.html" data-i18n="nv_mpg">📱 マイページの使い方</a>
+    <a href="official-vehicles.html" data-i18n="nv_cars">🚗 車両と料金</a>
+    <a href="daisha.html" class="hl" data-i18n="nv_daisha">🔧 代車のお届けサービス</a>
+    <a href="official-insurance.html" data-i18n="nv_ins">🛡 保険プラン一覧</a>
+    <a href="official-contact.html" data-i18n="nv_contact">✉️ お問い合わせ</a>
+    <a href="official-data-protection.html" data-i18n="nv_dp">🔐 個人情報・セキュリティ</a>
+    <div class="dsec" data-i18n="nv_dsec">店舗ごとの情報</div>
+    <details><summary data-i18n="nv_g_nha">🌺 那覇空港店（沖縄）</summary>
+      <a href="naha/index.html" data-i18n="nv_nha_lp">那覇空港レンタカー（無料送迎・お届け）</a>
+      <a href="naha-hotel-delivery.html" data-i18n="nv_nha_hotel">那覇のホテルまでお届け</a>
+      <a href="naha-airport-no-wait.html" data-i18n="nv_nha_nowait">那覇空港の送迎待ちを避ける借り方</a>
+      <a href="okinawa-family-minivan.html" data-i18n="nv_oki_family">沖縄の家族旅行に7〜8人乗り</a>
+      <a href="official-nha-guide.html" data-i18n="nv_nha_guide">ご利用方法（沖縄那覇店）</a>
+      <a href="official-nha-faq.html" data-i18n="nv_nha_faq">よくある質問（沖縄那覇店）</a>
+      <a href="official-bus.html" data-i18n="nv_nha_bus">那覇空港店 空港送迎バス時刻表</a>
+    </details>
+    <details><summary data-i18n="nv_g_spk">❄️ 札幌店（北海道）</summary>
+      <a href="sapporo/index.html" data-i18n="nv_spk_lp">札幌でホテルまで届くレンタカー（デリバリー）</a>
+      <a href="sapporo-winter-rentacar.html" data-i18n="nv_spk_winter">冬の札幌レンタカー（全車4WD・スタッドレス）</a>
+      <a href="sapporo-ski-snowfestival.html" data-i18n="nv_spk_ski">札幌のスキー・雪まつり</a>
+      <a href="sapporo-alphard-rentacar.html" data-i18n="nv_spk_alph">札幌でアルファード・ヴェルファイア</a>
+      <a href="sapporo-minivan-rentacar.html" data-i18n="nv_spk_mini">札幌でミニバン（7〜8人乗り）</a>
+      <a href="sapporo-drive-course.html" data-i18n="nv_spk_drive">札幌発ドライブコース</a>
+      <a href="official-spk-guide.html" data-i18n="nv_spk_guide">ご利用方法（札幌店）</a>
+      <a href="official-spk-faq.html" data-i18n="nv_spk_faq">よくある質問（札幌店）</a>
+    </details>
+    <details><summary data-i18n="nv_g_tkm">🍜 高松空港店（香川）</summary>
+      <a href="takamatsu/index.html" data-i18n="nv_tkm_lp">高松空港レンタカー（無料送迎）</a>
+      <a href="takamatsu-udon-drive.html" data-i18n="nv_tkm_udon">レンタカーで讃岐うどん巡り</a>
+      <a href="takamatsu-shodoshima-naoshima.html" data-i18n="nv_tkm_shodo">高松から小豆島・直島へ</a>
+      <a href="official-tkm-airport.html" data-i18n="nv_tkm_guide">ご利用方法（高松空港店）</a>
+      <a href="official-tkm-faq.html" data-i18n="nv_tkm_faq">よくある質問（高松空港店）</a>
+    </details>
+    <a href="https://www.instagram.com/delivery_rentalcar_handyman" target="_blank" rel="noopener">📷 Instagram</a>
+    <a href="https://www.facebook.com/p/%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%AB%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97-HandyMan-100091745645173/" target="_blank" rel="noopener">📘 Facebook</a>
+  </nav>
+  <div class="dback"></div>
+</div></header>
+<main class="wrap" id="app">
+  <div class="center"><div class="spin"></div>読み込んでいます…</div>
+</main>
 
 <div class="scrim" id="scrim"><div class="sheet" id="sheet"></div></div>
 <div class="toast" id="toast"></div>
+<footer class="gf"><div class="container">
+  <div class="fbtn"><a class="y" href="index.html#finder" data-i18n="hd_f_book">空車を探して予約する</a><a href="official-mypage-find.html" data-i18n="hd_f_rsv">予約の確認・マイページ</a></div>
+  <div class="cols">
+    <div><img src="official-assets/brand/img_logo_v2.png" alt="HANDYMAN RENTCAR" style="height:28px;width:auto;margin-bottom:14px"><p data-i18n="nv_f_desc">那覇空港・札幌・高松空港のレンタカー<br>9:00〜19:00 年中無休 ／ 050-1724-6197</p></div>
+    <div><h4>STORES</h4><a href="naha/index.html" data-i18n="nv_f_nha">那覇空港店</a><a href="sapporo/index.html" data-i18n="nv_f_spk">札幌店</a><a href="takamatsu/index.html" data-i18n="nv_f_tkm">高松空港店</a><a href="official-access.html" data-i18n="nv_f_access">アクセス</a></div>
+    <div><h4>GUIDE</h4><a href="official-vehicles.html" data-i18n="nv_f_cars">車両と料金</a><a href="official-insurance.html" data-i18n="nv_f_ins">補償・保険</a><a href="official-mypage-guide.html" data-i18n="nv_f_mp">マイページの使い方</a><a href="official-contact.html" data-i18n="nv_f_contact">お問い合わせ</a></div>
+    <div><h4>COMPANY</h4><a href="company/index.html" data-i18n="nv_f_company">会社概要</a><a href="official-clause.html" data-i18n="nv_f_clause">貸渡約款</a><a href="official-privacy.html" data-i18n="nv_f_privacy">プライバシーポリシー</a><a href="official-transaction.html" data-i18n="nv_f_tokusho">特定商取引法に基づく表記</a></div>
+  </div><div class="copy">© HANDYMAN RENTCAR</div></div></footer>
 
 <script>
 const VER = "v1.5-tkm HANDYMAN高松空港店マイページ(じゃらんHDM・傷チェック確認→承認サイン追加)";
@@ -585,7 +350,7 @@ const TX={
  ph_col:{ja:"例：札幌駅",en:"e.g. Sapporo Station",zh:"例：札幌車站",ko:"예: 삿포로역"},
  sapporo_st_note:{ja:"⚠️ 札幌駅の南口は停車不可のため、<b>北口</b>をおすすめします。北口でのお受け渡しをご指定ください。",en:"⚠️ Stopping is not allowed at the South exit of Sapporo Station. Please use the <b>North exit</b>.",zh:"⚠️ 札幌車站南口禁止停車，建議使用<b>北口</b>交車。",ko:"⚠️ 삿포로역 남쪽 출구는 정차 불가입니다. <b>북쪽 출구</b>를 이용해 주세요."},
  sub_del:{ja:"お届けの24時間前まで即時反映。以降は担当が確認後に反映します。",en:"Instant up to 24h before delivery. After that, staff confirm.",zh:"送車前24小時內即時反映，之後由專員確認。",ko:"배달 24시간 전까지 즉시 반영. 이후 담당자 확인."},
- sub_col:{ja:"回収の2時間前まで変更できます。以降はメール（reserve@rent-handyman.com）で承ります。",en:"Editable up to 2h before pickup. Later by email (reserve@rent-handyman.com).",zh:"取車前2小時可變更，之後請透過電子郵件（reserve@rent-handyman.com）。",ko:"회수 2시간 전까지 변경 가능. 이후 이메일(reserve@rent-handyman.com)."},
+ sub_col:{ja:"回収の2時間前まで変更できます。以降はメール（reserve@__NEW_DOMAIN__）で承ります。",en:"Editable up to 2h before pickup. Later by email (reserve@__NEW_DOMAIN__).",zh:"取車前2小時可變更，之後請透過電子郵件（reserve@__NEW_DOMAIN__）。",ko:"회수 2시간 전까지 변경 가능. 이후 이메일(reserve@__NEW_DOMAIN__)."},
  map_del_title:{ja:"お届け先の変更",en:"Change delivery location",zh:"變更送車地點",ko:"배달 장소 변경"},
  map_col_title:{ja:"回収先の変更",en:"Change pickup location",zh:"變更取車地點",ko:"회수 장소 변경"},
  map_new_del:{ja:"お届け先の登録",en:"Register delivery location",zh:"登記送車地點",ko:"배달 장소 등록"},
@@ -715,6 +480,8 @@ function placeErrJs(place,lat,lng){
   return null;
 }
 function t(k){const e=TX[k];return e?(e[L]||e.ja):k;}
+// 見出し・ラベルの新しい文言（assets/pages-i18n.js の mt_k_ キー）。無ければ従来の文言
+function tk(k){const X=window.HDM_DICT_EXT,n="mt_k_"+k;let v=X&&X[L]&&X[L][n];if(v==null&&X&&X.ja)v=X.ja[n];return v!=null?v:t(k);}
 function tf(k){const e=TX[k];if(!e)return"";const f=e[L]||e.ja;const a=[].slice.call(arguments,1);return typeof f==="function"?f.apply(null,a):f;}
 function langSwitch(){return `<div class="langsw">`+LANGS.map(l=>`<button class="${L===l.k?'on':''}" onclick="setLang('${l.k}')">${l.n}</button>`).join("")+`</div>`;}
 
@@ -726,7 +493,7 @@ function dateTime(d,t){const dd=fmtDate(d);return dd?(dd+(t?" "+t:"")):(t||"—"
 function daysTo(ds){if(!ds)return null;const m=/^(\d{4})-(\d{2})-(\d{2})/.exec(ds);if(!m)return null;const target=new Date(+m[1],+m[2]-1,+m[3]);const now=new Date();now.setHours(0,0,0,0);target.setHours(0,0,0,0);return Math.round((target-now)/86400000);}
 function nhWxIcon(c){if(c===0)return"☀️";if(c<=2)return"🌤";if(c<=3)return"⛅️";if(c<=48)return"🌫";if(c<=67)return"🌧";if(c<=77)return"🌨";if(c<=82)return"🌦";return"⛈";}
 function nhLoadWx(){try{fetch("https://api.open-meteo.com/v1/forecast?latitude=34.2141&longitude=134.0156&current=temperature_2m,weather_code&timezone=Asia%2FTokyo").then(r=>r.json()).then(d=>{if(d&&d.current){var t=document.getElementById("nhWxT");if(t)t.textContent=Math.round(d.current.temperature_2m)+"°";var i=document.getElementById("nhWxIc");if(i)i.textContent=nhWxIcon(d.current.weather_code);}}).catch(()=>{});}catch(e){}}
-const IMG_BASE="https://nosh2318.github.io/spk-task/images/"; // クラス画像はspk-task同梱を参照(同一オリジンnosh2318.github.io・_nha付き)
+const IMG_BASE="official-assets/cars/"; // クラス画像はspk-task同梱を参照(同一オリジンnosh2318.github.io・_nha付き)
 function trackUrl(resId,trk,type){ // type: "del"=お届け / "col"=回収
   const guide=(type==="col")?"handyman-collection-guide.html":"handyman-delivery-guide.html";
   const t=trk.token?("&t="+encodeURIComponent(trk.token)):"";
@@ -1177,21 +944,20 @@ function render(){
   $("#app").innerHTML = `
   ${RO?`<div style="background:#121a24;color:#fff;display:flex;align-items:center;gap:8px;padding:9px 12px;font-size:13px;font-weight:700"><button onclick="try{window.close()}catch(e){};setTimeout(function(){history.length>1?history.back():(location.href='index.html')},120)" style="background:#fff;color:#121a24;border:none;border-radius:6px;padding:6px 12px;font-size:13px;font-weight:800;cursor:pointer;white-space:nowrap">← APPに戻る</button><span style="flex:1;text-align:center">🔒 スタッフ確認用（閲覧のみ）</span></div>`:""}
   <div class="nhero">
-    <img class="nh-logo" src="hdm-logo-of.png" alt="HANDYMAN">
     <div class="nh-lang">${LANGS.map(l=>`<button class="${L===l.k?'on':''}" onclick="setLang('${l.k}')">${l.k==='ja'?'日':l.n}</button>`).join("")}</div>
     <div class="nh-c">
-      <div class="nh-eye">Welcome To Takamatsu</div>
+      <div class="nh-eye">Takamatsu Airport</div>
       <div class="nh-oki">高松</div>
-      <div class="nh-name">${esc(r.name||t('guest'))} <span style="opacity:.85">${t('your_page')}</span></div>
+      <div class="nh-name">${esc(r.name||t('guest'))} <span style="opacity:.85">${tk('your_page')}</span></div>
       ${(()=>{const dd=daysTo(r.lend_date);return (dd!=null&&dd>=0)?`<div class="nh-cd"><span>${t('nh_days_pre')}</span><b>${dd}</b><span>${t('nh_days')}</span></div>`:"";})()}
-      <div class="nh-wx"><span id="nhWxIc">☀️</span> ${t('nh_now')} <b id="nhWxT">--°</b></div>
+      <div class="nh-wx"><span id="nhWxIc">☀️</span> ${tk('nh_now')} <b id="nhWxT">--°</b></div>
     </div>
     <div class="nh-st">${esc(stLabel)}</div>
   </div>
 
   ${!cancelled?`<div class="tvbox">
-    <div class="tv-h"><span class="ic">🎁</span><b>${t('tv_hd')}</b></div>
-    <div class="tv-sub">${t('tv_sub')}</div>
+    <div class="tv-h"><span class="ic">🎁</span><b>${tk('tv_hd')}</b></div>
+    <div class="tv-sub">${tk('tv_sub')}</div>
     <div class="tv-grid">
       <a class="tv-item" onclick="tvClick('exp')"><span class="te">🎫</span><span class="tt">${t('tv_exp')}</span><span class="tg">›</span></a>
       <a class="tv-item" onclick="tvClick('hotel')"><span class="te">🏨</span><span class="tt">${t('tv_hotel')}</span><span class="tg">›</span></a>
@@ -1202,8 +968,8 @@ function render(){
 
   ${(!RO&&!cancelled&&!(d.license&&d.license.cnt>0))?`<div class="licalert" onclick="scrollLic()">
     <div class="la-ic">🪪</div>
-    <div class="la-tx"><b>⚠️ ${t('lic_alert_title')}</b><span>${t('lic_alert_body')}</span></div>
-    <div class="la-go">${t('lic_alert_btn')}</div>
+    <div class="la-tx"><b>⚠️ ${tk('lic_alert_title')}</b><span>${t('lic_alert_body')}</span></div>
+    <div class="la-go">${tk('lic_alert_btn')}</div>
   </div>`:""}
 
   ${d.pendingCancel?`<div class="banner">${t('banner_cancel')}</div>`:""}
@@ -1227,10 +993,10 @@ function render(){
     <div style="font-size:12px;color:#64748b;margin-top:8px;line-height:1.6">${{ja:'※ ご出発3日前の19:00までにお願いいたします。お支払い後、こちらのページに反映されます。',en:'※ Please pay by 19:00, 3 days before departure. Status updates here after payment.',zh:'※ 請於出發前3天19:00前付款。付款後此頁面將更新。',ko:'※ 출발 3일 전 19:00까지 부탁드립니다. 결제 후 이 페이지에 반영됩니다.'}[L]||'※ ご出発3日前の19:00までにお願いいたします。'}</div>`:`<div style="font-size:13px;color:#64748b">${{ja:'決済リンクを準備中です。しばらくお待ちください。',en:'Preparing payment link. Please wait.',zh:'正在準備付款連結，請稍候。',ko:'결제 링크를 준비 중입니다.'}[L]||'決済リンクを準備中です。'}</div>`)}
   </div>`:""}
 
-  <div class="divlabel">${t('travel_guide')}</div>
+  <div class="divlabel">${tk('travel_guide')}</div>
 
   <details class="acc">
-    <summary><span class="ic">🚗</span>${t('resv_content')}<span class="chev">▾</span></summary>
+    <summary><span class="ic">🚗</span>${tk('resv_content')}<span class="chev">▾</span></summary>
     <div class="accb">
     <div class="row"><div class="k">${t('booked_via')}</div><div class="v">${esc(otaName(r.ota))}<span style="color:#94a3b8;font-size:12px;margin-left:6px">${esc(r.id||"")}</span></div></div>
     <div class="row"><div class="k">${t('vehicle_class')}</div><div class="v">${esc(r.vehicle)}（${esc(cls)}）</div></div>
@@ -1245,7 +1011,7 @@ function render(){
 
   ${!cancelled?`
   <div class="puc">
-    <div class="pu-h"><span style="font-size:22px">🚐</span>${t('pu_title')}<span class="pu-free">${t('pu_free')}</span></div>
+    <div class="pu-h"><span style="font-size:22px">🚐</span>${tk('pu_title')}<span class="pu-free">${t('pu_free')}</span></div>
     <div class="pu-route"><div class="pu-node"><div class="pu-emoji">✈️</div><span>${t('pu_from')}</span></div><div class="pu-arrow">↔</div><div class="pu-node"><div class="pu-emoji">🏬</div><span>${t('pu_to')}</span></div></div>
     <div class="pu-time"><span>${t('pu_time_l')}</span>　<b>9:00 – 18:50</b></div>
     <div class="pu-mins">⏱ ${t('pu_min_l')} <b>${t('pu_min')}</b></div>
@@ -1253,7 +1019,7 @@ function render(){
     ${!RO?`
     <!-- 行き：空港お迎え(PU) or 店舗へ行く(来店) -->
     <div class="pu-pick" id="puBox">
-      <div class="pu-pick-h">🚐 ${t('pu_go_h')}</div>
+      <div class="pu-pick-h">${tk('pu_go_h')}</div>
       <div class="pu-pick-sub">${t('pu_go_sub')}</div>
       <div style="font-size:12px;color:#c85a12;background:#fff3e8;border:1px solid #ffd8b8;border-radius:8px;padding:8px 10px;margin-top:8px;line-height:1.55">📝 ${t('pu_guide')}</div>
       <div style="display:flex;gap:8px;margin-top:8px">
@@ -1265,7 +1031,7 @@ function render(){
     </div>
     <!-- 帰り：送迎(BD) or 店舗で返却 -->
     <div class="pu-pick" id="rtBox" style="background:#fff7ef;border:2px solid #ee6a1c">
-      <div class="pu-pick-h">🚙 ${t('rt_h')}</div>
+      <div class="pu-pick-h">${tk('rt_h')}</div>
       <div class="pu-pick-sub">${t('rt_sub')}</div>
       <div style="font-size:12px;color:#c85a12;background:#fff3e8;border:1px solid #ffd8b8;border-radius:8px;padding:8px 10px;margin-top:8px;line-height:1.55">📝 ${t('rt_guide')}</div>
       <div style="display:flex;gap:8px;margin-top:8px">
@@ -1277,18 +1043,18 @@ function render(){
     </div>`:`
     ${r.pickup_time?`<div class="pu-cur">🚐 ${t('pu_cur')}：<b>${esc(r.pickup_time)}〜</b></div>`:(r.visit_type==="来店"?`<div class="pu-cur" style="background:#eef2f7;border-color:#cbd5e1;color:#334155">🏬 ${t('pu_none_go')}</div>`:"")}
     ${r.dropoff_time?`<div class="pu-cur" style="margin-top:8px">🚙 ${t('rt_done')}：<b>${esc(r.dropoff_time)}〜</b></div>`:(r.return_type==="返却"?`<div class="pu-cur" style="margin-top:8px;background:#eef2f7;border-color:#cbd5e1;color:#334155">🏬 ${t('rt_none')}</div>`:"")}`}
-    <div class="pu-spot">📍 ${t('pu_spot')}</div>
-    <img class="pu-map" src="https://buddica-touring.github.io/app/guide/airport-pickup-map.png" alt="高松空港 送迎待ち合わせ場所" loading="lazy">
-    <img class="pu-map" src="https://buddica-touring.github.io/app/guide/pickup-spot.jpg" alt="レンタカー会社受付付近（待機場所）" style="margin-top:8px" loading="lazy">
+    <div class="pu-spot">${tk('pu_spot')}</div>
+    <img class="pu-map" src="official-assets/guide/tkm/airport-pickup-map.png" alt="高松空港 送迎待ち合わせ場所" loading="lazy">
+    <img class="pu-map" src="official-assets/guide/tkm/pickup-spot.jpg" alt="レンタカー会社受付付近（待機場所）" style="margin-top:8px" loading="lazy">
     <div class="pu-spot-d">${t('pu_spot_d')}</div>
   </div>`:""}
 
   ${/* ★高松版=沖縄おすすめスポットは非表示(那覇固有・香川版は今後追加) */""}
 
-  <div class="divlabel">${t('nh_dl_manage')}</div>
+  <div class="divlabel">${tk('nh_dl_manage')}</div>
 
   <details class="acc">
-    <summary><span class="ic">🩹</span>${t('damage_check')}<span class="chev">▾</span></summary>
+    <summary><span class="ic">🩹</span>${tk('damage_check')}<span class="chev">▾</span></summary>
     <div class="accb">
     ${d.damage.ready
       ? (d.damage.url
@@ -1308,7 +1074,7 @@ function render(){
 
   ${(!RO&&!cancelled)?`
   <details class="acc" id="liccard">
-    <summary><span class="ic">🪪</span>${t('lic_title')}<span class="chev">▾</span></summary>
+    <summary><span class="ic">🪪</span>${tk('lic_title')}<span class="chev">▾</span></summary>
     <div class="accb">
     ${(d.license&&d.license.cnt>0)?`<div style="background:#dcfce7;border:1.5px solid #86efac;border-radius:11px;padding:11px 13px;margin-bottom:12px;color:#15803d;font-weight:800;font-size:14px">${t('lic_registered')}${(d.license.drivers>0)?`<div style="font-weight:800;font-size:13px;margin-top:4px;color:#166534">${({ja:'登録人数：'+d.license.drivers+'名',en:'Registered drivers: '+d.license.drivers,zh:'已登記人數：'+d.license.drivers+'名',ko:'등록 인원: '+d.license.drivers+'명'})[L]||('登録人数：'+d.license.drivers+'名')}</div>`:''}<div style="font-weight:600;font-size:12px;margin-top:3px;color:#166534">${t('lic_readd')}</div></div>`:`<div class="note" style="margin:0 0 12px">${t('lic_desc')}</div>`}
     <div id="licbody">${licBody()}</div>
@@ -1316,7 +1082,7 @@ function render(){
     </div>
   </details>`:RO?`
   <details class="acc">
-    <summary><span class="ic">🪪</span>${t('lic_title')}<span class="chev">▾</span></summary>
+    <summary><span class="ic">🪪</span>${tk('lic_title')}<span class="chev">▾</span></summary>
     <div class="accb">
     ${(d.license&&d.license.cnt>0)?`<div style="background:#dcfce7;border:1.5px solid #86efac;border-radius:11px;padding:12px 14px;color:#15803d;font-weight:800;font-size:15px">✅ 免許証 登録済み<span style="font-weight:700;font-size:13px;margin-left:8px;color:#166534">（${d.license.cnt}枚／運転者${d.license.drivers||1}名）</span><div style="font-weight:600;font-size:11px;margin-top:4px;color:#166534">お客様がマイページ/ガイドから登録済み。Googleドライブに保存されています。</div></div>`:`<div style="background:#fff7ed;border:1.5px solid #fed7aa;border-radius:11px;padding:12px 14px;color:#c2410c;font-weight:800;font-size:15px">⬜ 免許証 未提出</div><a href="license.html?id=${encodeURIComponent(r.id)}&name=${encodeURIComponent(r.name||'')}" target="_blank" style="display:block;text-align:center;margin-top:10px;background:#121a24;color:#fff;font-weight:800;font-size:14px;text-decoration:none;border-radius:10px;padding:12px">📷 免許証をアップ（スタッフ代理）</a>`}
     </div>
@@ -1327,7 +1093,7 @@ function render(){
   <!-- 返却準備(早め回収)カードは削除：HDM高松はデリバリ(回収)が無く空港送迎のみのため -->
 
   <details class="acc">
-    <summary><span class="ic">🚨</span>${t('trb_head')}<span class="chev">▾</span></summary>
+    <summary><span class="ic">🚨</span>${tk('trb_head')}<span class="chev">▾</span></summary>
     <div class="accb">
     <div style="background:#2a1416;border:1px solid #5b2327;border-radius:12px;padding:14px;margin-bottom:14px">
       <span style="display:inline-block;background:#e5484d;color:#fff;font-size:11px;font-weight:900;border-radius:999px;padding:3px 10px;margin-bottom:8px">${t('trb_tag')}</span>
@@ -1347,7 +1113,7 @@ function render(){
     </div>
     <div style="font-size:11px;color:#9aa0a8;margin:6px 0 16px;line-height:1.6">${t('trb_emg_note')}</div>
 
-    <div style="font-weight:800;color:#c78900;font-size:14px;margin-bottom:8px">${t('trb_flow_h')}</div>
+    <div style="font-weight:800;color:#c78900;font-size:14px;margin-bottom:8px">${tk('trb_flow_h')}</div>
     <div style="display:flex;flex-direction:column;gap:8px">
       <div style="display:flex;gap:11px;align-items:flex-start;background:#15151b;border:1px solid #2a2a30;border-radius:11px;padding:11px 12px"><span style="flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:#121a24;color:#fabe00;font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center">1</span><div><div style="font-weight:800;color:#fff;font-size:14px">${t('trb_s1t')}</div><div style="color:#aeb4bd;font-size:12px;margin-top:1px">${t('trb_s1d')}</div></div></div>
       <div style="display:flex;gap:11px;align-items:flex-start;background:#15151b;border:1px solid #2a2a30;border-radius:11px;padding:11px 12px"><span style="flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:#121a24;color:#fabe00;font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center">2</span><div><div style="font-weight:800;color:#fff;font-size:14px">${t('trb_s2t')}</div><div style="color:#aeb4bd;font-size:12px;margin-top:1px">${t('trb_s2d')}</div></div></div>
@@ -1355,7 +1121,7 @@ function render(){
       <div style="display:flex;gap:11px;align-items:flex-start;background:#15151b;border:1px solid #2a2a30;border-radius:11px;padding:11px 12px"><span style="flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:#121a24;color:#fabe00;font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center">4</span><div><div style="font-weight:800;color:#fff;font-size:14px">${t('trb_s4t')}</div><div style="color:#aeb4bd;font-size:12px;margin-top:1px">${t('trb_s4d')}</div></div></div>
     </div>
 
-    <div style="font-weight:800;color:#c78900;font-size:14px;margin:16px 0 8px">${t('trb_cost_h')}</div>
+    <div style="font-weight:800;color:#c78900;font-size:14px;margin:16px 0 8px">${tk('trb_cost_h')}</div>
     <div style="border:1px solid #2a2a30;border-radius:11px;overflow:hidden;background:#15151b">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 13px;border-bottom:1px solid #23232a"><span style="color:#e9edf2;font-weight:700;font-size:13px">${t('trb_c1')}</span><span style="font-size:11px;font-weight:800;border-radius:999px;padding:3px 10px;white-space:nowrap;background:#0f2e21;color:#54d19a;border:1px solid #1f5c42">${t('trb_c1p')}</span></div>
       <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 13px;border-bottom:1px solid #23232a"><span style="color:#e9edf2;font-weight:700;font-size:13px">${t('trb_c2')}</span><span style="font-size:11px;font-weight:800;border-radius:999px;padding:3px 10px;white-space:nowrap;background:#2a1416;color:#ff8f92;border:1px solid #5b2327">${t('trb_c2p')}</span></div>
@@ -1363,7 +1129,7 @@ function render(){
       <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 13px"><span style="color:#e9edf2;font-weight:700;font-size:13px">${t('trb_c4')}</span><span style="font-size:11px;font-weight:800;border-radius:999px;padding:3px 10px;white-space:nowrap;background:#3a2f00;color:#ffd766;border:1px solid #6b560a">${t('trb_c4p')}</span></div>
     </div>
 
-    <div style="font-weight:800;color:#c78900;font-size:14px;margin:16px 0 8px">${t('trb_four_h')}</div>
+    <div style="font-weight:800;color:#c78900;font-size:14px;margin:16px 0 8px">${tk('trb_four_h')}</div>
     <div style="display:flex;flex-direction:column;gap:7px">
       <div style="display:flex;gap:9px;align-items:center;background:#15151b;border:1px solid #2a2a30;border-radius:9px;padding:9px 11px"><span style="flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:#fabe00;color:#0c0c10;font-weight:900;font-size:12px;display:flex;align-items:center;justify-content:center">1</span><span style="font-size:13px;font-weight:700;color:#eef1f5">${t('trb_f1')}</span></div>
       <div style="display:flex;gap:9px;align-items:center;background:#15151b;border:1px solid #2a2a30;border-radius:9px;padding:9px 11px"><span style="flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:#fabe00;color:#0c0c10;font-weight:900;font-size:12px;display:flex;align-items:center;justify-content:center">2</span><span style="font-size:13px;font-weight:700;color:#eef1f5">${t('trb_f2')}</span></div>
@@ -1377,7 +1143,7 @@ function render(){
 
   <!-- ⛽ 周辺ガソリンスタンド（BUDDICAご利用ガイド gasCard と同一仕様・内容） -->
   <details class="acc" id="gasCard">
-    <summary><span class="ic">⛽</span>${t('sec_gas')}<span class="chev">▾</span></summary>
+    <summary><span class="ic">⛽</span>${tk('sec_gas')}<span class="chev">▾</span></summary>
     <div class="accb">
     <div class="note" style="margin:0 0 10px">${t('gas_lead')}</div>
     <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:12px;">
@@ -1422,31 +1188,31 @@ function render(){
 
   ${cancelled?"":(d.pendingCancel?`
   <details class="acc">
-    <summary><span class="ic">🚫</span>${t('cancel')}<span class="chev">▾</span></summary>
+    <summary><span class="ic">🚫</span>${tk('cancel')}<span class="chev">▾</span></summary>
     <div class="accb"><div class="dashed"><span class="pill wait">${t('cancel_done')}</span><div style="margin-top:8px">${t('cancel_wait')}</div></div></div>
   </details>`:(isHP?`
   <details class="acc">
-    <summary><span class="ic">🚫</span>${t('cancel')}<span class="chev">▾</span></summary>
+    <summary><span class="ic">🚫</span>${tk('cancel')}<span class="chev">▾</span></summary>
     <div class="accb">
     <button class="bigbtn" style="background:#fff;color:var(--danger);border:1.5px solid #f0c2c2" onclick="askCancel()">${t('cancel_apply')}</button>
     <div class="note">${t('cancel_note')}</div>
     </div>
   </details>`:`
   <details class="acc">
-    <summary><span class="ic">🚫</span>${t('cancel')}<span class="chev">▾</span></summary>
+    <summary><span class="ic">🚫</span>${tk('cancel')}<span class="chev">▾</span></summary>
     <div class="accb"><div class="note">${t('cancel_ota_notice')}</div></div>
   </details>`))}
 
   ${(()=>{const list=(d.history||d.recentChanges||[]).map(c=>histLine(c,"you")).filter(Boolean);
     if(!list.length)return"";
-    return `<details class="acc"><summary><span class="ic">🕘</span>${t('recent_hist')}<span class="chev">▾</span></summary><div class="accb">`+
+    return `<details class="acc"><summary><span class="ic">🕘</span>${tk('recent_hist')}<span class="chev">▾</span></summary><div class="accb">`+
       list.map(h=>`<div class="hrow"><span class="hdate">${h.date}</span><span class="htx">${h.text}</span>${h.pill?`<span class="hpill" style="color:${h.pc};background:${h.pb}">${h.pill}</span>`:""}</div>`).join("")+
       `<div class="note">${t('hist_note')}</div></div></details>`})()}
 
   <div class="oshin"><div style="font-size:22px">🌺</div><p>${t('nh_oshi')}</p><div class="sig">— HANDYMAN ${esc(d.label)}${t('store')} —</div></div>
 
   <details style="margin-top:16px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden">
-    <summary style="padding:14px 16px;font-weight:800;font-size:15px;color:#121a24;cursor:pointer;display:flex;align-items:center;gap:8px;list-style:none">${t('terms_title')}<span style="margin-left:auto;font-size:11px;font-weight:700;color:var(--sub)">${t('terms_hint')}</span></summary>
+    <summary style="padding:14px 16px;font-weight:800;font-size:15px;color:#121a24;cursor:pointer;display:flex;align-items:center;gap:8px;list-style:none">${tk('terms_title')}<span style="margin-left:auto;font-size:11px;font-weight:700;color:var(--sub)">${t('terms_hint')}</span></summary>
     <div style="max-height:340px;overflow-y:auto;padding:12px 16px 16px;font-size:12px;line-height:1.75;color:#444;border-top:1px solid var(--line)">${TERMS[L]||TERMS.ja}</div>
   </details>
 
@@ -1836,7 +1602,7 @@ async function load(){
   if(!json.ok){
     const netmsg={ja:"通信が不安定なため読み込めませんでした。電波の良い場所で再読み込みしてください。",en:"Network unstable. Please reload where signal is good.",zh:"網路不穩定，請在訊號良好處重新載入。",ko:"네트워크가 불안정합니다. 신호가 좋은 곳에서 새로고침 해주세요."};
     const msg=json._neterr?(netmsg[L]||netmsg.ja):t('not_found');
-    $("#app").innerHTML=`<div class="center">${msg}<br><br><button onclick="location.reload()" style="margin-top:10px;padding:9px 20px;border-radius:8px;border:none;background:#121a24;color:#fff;font-weight:800;font-size:15px;cursor:pointer">${t('reload')}</button></div>`;
+    $("#app").innerHTML=`<div class="center">${msg}<br><br><button onclick="location.reload()" style="margin-top:10px;padding:9px 20px;border-radius:8px;border:none;background:#121a24;color:#fff;font-weight:800;font-size:15px;cursor:pointer">${tk('reload')}</button></div>`;
     return;
   }
   DATA=json;
@@ -1889,6 +1655,7 @@ async function load(){
 load();
 </script>
 <script src="official-i18n.js?v=10081000"></script>
+<script src="assets/site.js"></script>
 <script>(function(){var s=document.createElement('style');s.textContent='.hdmlang{display:none!important}';document.head.appendChild(s);})();</script>
 </body>
 </html>
