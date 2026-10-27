@@ -203,3 +203,12 @@ a{color:inherit}
  .gh .ham{margin-left:0;width:36px;padding:8px 4px}
  .container.in{padding-left:16px;padding-right:16px}
 }
+/* 店舗カード内ギャラリー（旧サイトのエリア実写をスライド表示） */
+.store .sg{position:absolute!important;inset:0;background:center/cover no-repeat;opacity:0;transition:opacity 1.2s ease,transform 6s ease;transform:scale(1.03);z-index:0}
+.store .sg.on{opacity:1;transform:scale(1)}
+.store::before{z-index:1}
+.store>*:not(.sg){z-index:2}
+.store .gcap{position:absolute!important;top:16px;right:16px;max-width:70%;text-align:right;font-size:11px;letter-spacing:.06em;color:rgba(255,255,255,.92);text-shadow:0 1px 6px rgba(0,0,0,.6);z-index:2;transition:opacity .4s}
+.store .gdots{display:flex;gap:6px;margin-top:14px}
+.store .gdots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.4);display:block}
+.store .gdots i.on{background:#fff}

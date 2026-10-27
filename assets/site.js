@@ -24,6 +24,20 @@
   if(sl.length>1){setInterval(function(){sl[i].classList.remove('on');i=(i+1)%sl.length;sl[i].classList.add('on');
     if(cp&&copies()[i]){cp.style.opacity=0;setTimeout(function(){var c=copies();if(c[i])cp.innerHTML=c[i];cp.style.opacity=1},500)}},6500);}
 
+
+  // 店舗カード内ギャラリー：data-gallery の実写を順番に切り替え、キャプションと点を表示
+  [].forEach.call(document.querySelectorAll('.store[data-gallery]'),function(card,ci){
+    var g;try{g=JSON.parse(card.getAttribute('data-gallery'))}catch(e){return}if(!g||!g.length)return;
+    card.style.backgroundImage='none';
+    var layers=g.map(function(x,k){var d=document.createElement('div');d.className='sg'+(k===0?' on':'');d.style.backgroundImage='url('+x.s+')';card.insertBefore(d,card.firstChild);return d});
+    var cap=document.createElement('span');cap.className='gcap';card.appendChild(cap);
+    var dots=document.createElement('span');dots.className='gdots';dots.innerHTML=g.map(function(_,k){return '<i'+(k===0?' class="on"':'')+'></i>'}).join('');
+    var more=card.querySelector('.more');card.insertBefore(dots,more);
+    var n=0;function show(){layers.forEach(function(l,k){l.classList.toggle('on',k===n)});[].forEach.call(dots.children,function(d,k){d.classList.toggle('on',k===n)});cap.textContent=T(g[n].k,g[n].c)}
+    show();langHooks.push(show);
+    setTimeout(function(){setInterval(function(){n=(n+1)%g.length;show()},4200)},ci*1400);
+  });
+
   // 空車検索 → 予約画面（official-flow.html）へ
   var f=document.getElementById('finder');if(!f)return;
   var area=f.querySelector('[name=area]'),pd=f.querySelector('[name=pd]'),pt=f.querySelector('[name=pt]'),rd=f.querySelector('[name=rd]'),rt=f.querySelector('[name=rt]');
