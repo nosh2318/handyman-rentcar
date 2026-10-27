@@ -1,8 +1,14 @@
 // HANDYMAN RENTCAR — 新サイト共通スクリプト（2026-10）
 (function(){
   // メニュー（スマホ）
-  var mb=document.querySelector('.gh .menu'),nv=document.querySelector('.gh nav');
-  if(mb&&nv)mb.addEventListener('click',function(){nv.classList.toggle('open')});
+  var hb=document.querySelector('.ham'),dr=document.querySelector('.drawer'),bk=document.querySelector('.dback');
+  // ヘッダーの backdrop-filter の影響を受けないよう、メニューは body 直下へ移す
+  if(dr)document.body.appendChild(dr);if(bk)document.body.appendChild(bk);
+  function dOpen(o){if(!dr)return;dr.classList.toggle('open',o);bk&&bk.classList.toggle('open',o);document.body.style.overflow=o?'hidden':''}
+  if(hb)hb.addEventListener('click',function(){dOpen(true)});
+  if(bk)bk.addEventListener('click',function(){dOpen(false)});
+  var dc=document.querySelector('.drawer .dclose');if(dc)dc.addEventListener('click',function(){dOpen(false)});
+  if(dr)dr.addEventListener('click',function(e){if(e.target.tagName==='A')dOpen(false)});
 
   // キービジュアルのスライド
   var sl=[].slice.call(document.querySelectorAll('.kv .slide')),cp=document.querySelector('.kv h1[data-copies]');
