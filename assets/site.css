@@ -181,3 +181,25 @@ a{color:inherit}
  .phero .lead{font-size:13px}
  .facts span{font-size:11px;padding:4px 10px}
 }
+/* 言語切替（ヘッダー：予約確認ピルとハンバーガーの間）2026-10 */
+.gh #hdmlang-slot{position:relative;display:flex;align-items:center;flex:none;margin-left:10px}
+.gh #hdmlang-slot .hdmlang{position:relative!important;top:auto!important;right:auto!important;z-index:5}
+.gh #hdmlang-slot .hdmlang-btn{display:flex;align-items:center;gap:5px;background:transparent!important;color:#e9e6df!important;border:1px solid rgba(255,255,255,.34)!important;border-radius:999px!important;padding:6px 11px!important;font-size:12px!important;font-weight:700!important;line-height:1.2;white-space:nowrap;cursor:pointer}
+.gh #hdmlang-slot .hdmlang-btn:hover{border-color:var(--y)!important;color:var(--y)!important}
+.gh #hdmlang-slot .hdmlang-menu{right:0;top:calc(100% + 8px);min-width:150px}
+.gh #hdmlang-slot .hdmlang-menu button.on{background:#0e1013!important;color:#fff!important}
+.gh .ham{flex:none}
+.gh .rsv{flex:none}
+#langsw{display:none!important} /* ページ内の旧言語ボタンはヘッダーの切替に統一 */
+@media(max-width:520px){
+ .gh .in{gap:8px}
+ .gh .logo{flex:0 1 auto;min-width:0;display:flex;align-items:center}
+ .gh .logo img{display:block;height:auto;width:auto;max-width:100%;max-height:26px}
+ .gh .rsv{padding:6px 10px;font-size:11.5px}
+ .gh #hdmlang-slot{margin-left:0}
+ .gh #hdmlang-slot .hdmlang-btn{padding:5px 8px!important;font-size:0!important;gap:3px}
+ .gh #hdmlang-slot .hdmlang-btn::before{content:"🌐";font-size:12px}
+ .gh #hdmlang-slot .hdmlang-cur{font-size:11.5px}
+ .gh .ham{margin-left:0;width:36px;padding:8px 4px}
+ .container.in{padding-left:16px;padding-right:16px}
+}
