@@ -215,3 +215,9 @@ body.bk-flow .gf{padding:18px 0 22px;border-top:1px solid #e3e7ee}
 body.bk-flow .gf .fbtn,body.bk-flow .gf .cols{display:none}
 body.bk-flow .gf .copy{margin:0;border:0;padding:0;text-align:center}
 @media(max-width:999px){body.bk-flow .gf{padding-bottom:110px}}
+/* PC：KVコピーを左寄せ（検索ボックスの左端にそろえ、左半分に収める） */
+@media(min-width:861px){
+ .kv .copy{width:100%;box-sizing:border-box}
+ .kv .copy h1{max-width:600px}.kv .copy .lead{max-width:720px}
+ .kv::after{background:linear-gradient(90deg,rgba(0,16,52,.72) 0%,rgba(0,16,52,.45) 38%,rgba(0,16,52,0) 62%),linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.35) 100%)}
+}
