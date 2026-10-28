@@ -339,7 +339,7 @@ const TX={
  ph_col:{ja:"例：札幌駅",en:"e.g. Sapporo Station",zh:"例：札幌車站",ko:"예: 삿포로역"},
  sapporo_st_note:{ja:"⚠️ 札幌駅の南口は停車不可のため、<b>北口</b>をおすすめします。北口でのお受け渡しをご指定ください。",en:"⚠️ Stopping is not allowed at the South exit of Sapporo Station. Please use the <b>North exit</b>.",zh:"⚠️ 札幌車站南口禁止停車，建議使用<b>北口</b>交車。",ko:"⚠️ 삿포로역 남쪽 출구는 정차 불가입니다. <b>북쪽 출구</b>를 이용해 주세요."},
  sub_del:{ja:"お届けの24時間前まで即時反映。以降は担当が確認後に反映します。",en:"Instant up to 24h before delivery. After that, staff confirm.",zh:"送車前24小時內即時反映，之後由專員確認。",ko:"배달 24시간 전까지 즉시 반영. 이후 담당자 확인."},
- sub_col:{ja:"回収の2時間前まで変更できます。以降はメール（reserve@__NEW_DOMAIN__）で承ります。",en:"Editable up to 2h before pickup. Later by email (reserve@__NEW_DOMAIN__).",zh:"取車前2小時可變更，之後請透過電子郵件（reserve@__NEW_DOMAIN__）。",ko:"회수 2시간 전까지 변경 가능. 이후 이메일(reserve@__NEW_DOMAIN__)."},
+ sub_col:{ja:"回収の2時間前まで変更できます。以降はメール（reserve@hdm-rentacar.jp）で承ります。",en:"Editable up to 2h before pickup. Later by email (reserve@hdm-rentacar.jp).",zh:"取車前2小時可變更，之後請透過電子郵件（reserve@hdm-rentacar.jp）。",ko:"회수 2시간 전까지 변경 가능. 이후 이메일(reserve@hdm-rentacar.jp)."},
  map_del_title:{ja:"お届け先の変更",en:"Change delivery location",zh:"變更送車地點",ko:"배달 장소 변경"},
  map_col_title:{ja:"回収先の変更",en:"Change pickup location",zh:"變更取車地點",ko:"회수 장소 변경"},
  map_new_del:{ja:"お届け先の登録",en:"Register delivery location",zh:"登記送車地點",ko:"배달 장소 등록"},
@@ -1214,7 +1214,7 @@ function render(){
       </div>` : `<div style="margin-top:10px;font-size:12px;color:var(--sub)">📄 ${t('terms_req_title')}：<b style="color:#b45309">${t('terms_unsigned')}</b></div>`)}
 
   <div class="foot">
-    HANDYMAN ${esc(d.label)}${t('store')} ／ ${t('foot_contact')}：<a href="mailto:reserve@rent-handyman.jp">reserve@rent-handyman.jp</a><br>
+    HANDYMAN ${esc(d.label)}${t('store')} ／ ${t('foot_contact')}：<a href="mailto:reserve@hdm-rentacar.jp">reserve@hdm-rentacar.jp</a><br>
     ${t('foot_private')}<br>
     <span style="opacity:.5">${VER}</span>
   </div>`;

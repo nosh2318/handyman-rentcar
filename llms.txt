@@ -2,7 +2,7 @@
 
 > 沖縄（那覇空港）・北海道（札幌）・香川（高松空港）でレンタカーを提供するレンタカー会社。
 > 空港無料送迎とホテル・自宅までのデリバリー（配車）が特長。公式サイトからオンライン予約が可能。
-> 公式サイト: https://__NEW_DOMAIN__/
+> 公式サイト: https://hdm-rentacar.jp/
 
 ## サービスの特長
 - 那覇空港・高松空港での**無料送迎**（空港でお客様をお迎えし受け渡し場所へご案内）
@@ -23,7 +23,7 @@
 - 所在地: 沖縄県豊見城市名嘉地180-1（HANDYMAN第二駐車場）
 - 営業時間: 9:00-19:00（年中無休）
 - 電話: 050-1724-6197
-- 詳細: https://__NEW_DOMAIN__/naha/ ／ 送迎バス: https://__NEW_DOMAIN__/official-bus.html
+- 詳細: https://hdm-rentacar.jp/naha/ ／ 送迎バス: https://hdm-rentacar.jp/official-bus.html
 
 ### 札幌店（北海道）= HANDYMAN札幌（デリバリー専門レンタカー）
 - 対応エリア: 札幌市内（北広島市は対象外。お届けできる場所は予約画面の地図で確認）
@@ -50,7 +50,7 @@
 - 所在地: 香川県高松市香川町川東上1373-4
 - 営業時間: 9:00-19:00（年中無休）
 - 電話: 050-1724-6197
-- 詳細: https://__NEW_DOMAIN__/takamatsu/ ／ 送迎案内: https://__NEW_DOMAIN__/official-tkm-airport.html ／ よくある質問: https://__NEW_DOMAIN__/official-tkm-faq.html
+- 詳細: https://hdm-rentacar.jp/takamatsu/ ／ 送迎案内: https://hdm-rentacar.jp/official-tkm-airport.html ／ よくある質問: https://hdm-rentacar.jp/official-tkm-faq.html
 
 
 ## 代車のお届けサービス（札幌・那覇）
@@ -60,18 +60,18 @@
 - 整備工場・板金・ディーラー・保険代理店向けの代車手配（提携）にも対応
 
 ## 主要ページ
-- トップ / オンライン予約: https://__NEW_DOMAIN__/
-- 札幌（デリバリーレンタカー）: https://__NEW_DOMAIN__/sapporo/
-- 那覇空港レンタカー（無料送迎・ホテルまでお届け）: https://__NEW_DOMAIN__/naha/
-- 那覇空港の無料送迎バス: https://__NEW_DOMAIN__/official-bus.html
-- 高松空港レンタカー: https://__NEW_DOMAIN__/takamatsu/
-- 車両と料金: https://__NEW_DOMAIN__/official-vehicles.html
-- 予約の流れ: https://__NEW_DOMAIN__/official-flow.html
-- 補償・保険プラン: https://__NEW_DOMAIN__/official-insurance.html
-- 高松空港アクセス: https://__NEW_DOMAIN__/official-tkm-airport.html
-- よくある質問（高松）: https://__NEW_DOMAIN__/official-tkm-faq.html
-- 予約確認（マイページ）: https://__NEW_DOMAIN__/official-mypage-find.html
-- お問い合わせ: https://__NEW_DOMAIN__/official-contact.html
+- トップ / オンライン予約: https://hdm-rentacar.jp/
+- 札幌（デリバリーレンタカー）: https://hdm-rentacar.jp/sapporo/
+- 那覇空港レンタカー（無料送迎・ホテルまでお届け）: https://hdm-rentacar.jp/naha/
+- 那覇空港の無料送迎バス: https://hdm-rentacar.jp/official-bus.html
+- 高松空港レンタカー: https://hdm-rentacar.jp/takamatsu/
+- 車両と料金: https://hdm-rentacar.jp/official-vehicles.html
+- 予約の流れ: https://hdm-rentacar.jp/official-flow.html
+- 補償・保険プラン: https://hdm-rentacar.jp/official-insurance.html
+- 高松空港アクセス: https://hdm-rentacar.jp/official-tkm-airport.html
+- よくある質問（高松）: https://hdm-rentacar.jp/official-tkm-faq.html
+- 予約確認（マイページ）: https://hdm-rentacar.jp/official-mypage-find.html
+- お問い合わせ: https://hdm-rentacar.jp/official-contact.html
 
 ## 関連リンク
 - Instagram: https://www.instagram.com/delivery_rentalcar_handyman
