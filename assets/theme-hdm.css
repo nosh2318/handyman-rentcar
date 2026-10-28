@@ -207,3 +207,11 @@ body{background:#fff;color:var(--text);font-size:15px}
 
 /* スマホ：横長の写真を縦長の枠で切り抜くとき、写真ごとに主役（車・人）が入る位置に寄せる */
 @media(max-width:860px){.kv .slide{background-position:var(--mp,50% 50%)}}
+
+/* 予約画面（body.bk）は手続きに集中：ヘッダーのメニュー・予約確認・ハンバーガー、フッターの大ボタンとリンク集を出さない */
+body.bk-flow .gh .gnav,body.bk-flow .gh .rsv,body.bk-flow .gh .ham,body.bk-flow .drawer,body.bk-flow .dback{display:none!important}
+body.bk-flow .gh #hdmlang-slot{margin-left:auto;margin-right:14px}
+body.bk-flow .gf{padding:18px 0 22px;border-top:1px solid #e3e7ee}
+body.bk-flow .gf .fbtn,body.bk-flow .gf .cols{display:none}
+body.bk-flow .gf .copy{margin:0;border:0;padding:0;text-align:center}
+@media(max-width:999px){body.bk-flow .gf{padding-bottom:110px}}
