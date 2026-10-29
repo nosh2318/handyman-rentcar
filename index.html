@@ -16,6 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Shippori+Mincho:wght@500;600&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/theme-hdm.css">
 <script src="gtm.js"></script>
+<style>/* KV：PC用とスマホ用で別画像（10/29 5枚構成）。url は文書基準で解決させるためページ内に置く */.kv .slide{background-image:var(--pc)}@media(max-width:860px){.kv .slide{background-image:var(--sp,var(--pc));background-position:50% 40%}}</style>
 </head>
 <body>
 
@@ -58,10 +59,11 @@
 
 <section class="kv">
   <div class="slides">
-    <div class="slide on" style="background-image:url(official-assets/kv/kd-road.jpg);--mp:88% 60%"></div>
-    <div class="slide" style="background-image:url(official-assets/kv/kd-forest.jpg);--mp:74% 55%"></div>
-    <div class="slide" style="background-image:url(official-assets/kv/kd-lake.jpg);--mp:84% 60%"></div>
-    <div class="slide" style="background-image:url(official-assets/kv/kd-sunset.jpg);--mp:66% 55%"></div>
+    <div class="slide on" style="--pc:url(official-assets/kv/kv-coast-pc.jpg);--sp:url(official-assets/kv/kv-coast-sp.jpg)"></div>
+    <div class="slide" style="--pc:url(official-assets/kv/kv-for-pc.jpg);--sp:url(official-assets/kv/kv-for-sp.jpg)"></div>
+    <div class="slide" style="--pc:url(official-assets/kv/kv-mtn-pc.jpg);--sp:url(official-assets/kv/kv-mtn-sp.jpg)"></div>
+    <div class="slide" style="--pc:url(official-assets/kv/kv-lake-pc.jpg);--sp:url(official-assets/kv/kv-lake-sp.jpg)"></div>
+    <div class="slide" style="--pc:url(official-assets/kv/kv-friends-pc.jpg);--sp:url(official-assets/kv/kv-friends-sp.jpg)"></div>
   </div>
   <div class="container copy">
     <span class="tag" data-i18n="tp_tag">那覇空港 ・ 札幌 ・ 高松空港</span>
